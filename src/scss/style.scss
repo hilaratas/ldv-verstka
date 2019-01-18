@@ -1,0 +1,40 @@
+﻿
+//components
+@import "components/custom_mixins";
+//@import "../tmp/Iconfont/iconfont";
+@import "bootstrap4/functions";
+@import "variables_bootstrap4";
+@import "variables_components";
+
+
+
+@import "bootstrap4/mixins";
+@import "bootstrap4/mixins/breakpoints";
+@import "bootstrap4/mixins/grid-framework";
+
+// custom-components
+@import "components/blocks/reboot.scss";
+@import "components/blocks/reset";
+@import "components/blocks/page";
+@import "components/blocks/header";
+@import "components/blocks/humb";
+@import "components/blocks/footer";
+@import "components/blocks/footer-free";
+@import "components/blocks/section";
+@import "components/vendor/jquery.fancybox";
+@import "components/blocks/popups";
+@import "components/blocks/prev-icon";
+@import "components/blocks/title"; // Надо
+@import "components/blocks/lenta";
+@import "components/blocks/popups"; // Надо
+@import "components/blocks/form";
+@import "components/blocks/input";
+@import "components/blocks/checkbox";
+@import "components/blocks/radio";
+@import "components/blocks/button";
+@import "components/blocks/select";
+@import "components/blocks/text";
+@import "components/blocks/mobile-table";
+@import "components/blocks/scroll-content";
+
+@import "components/blocks/main-menu";

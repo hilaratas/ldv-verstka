@@ -1,0 +1,27 @@
+.section {
+
+	&__header {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background: $grey-brand-1;
+	}
+
+	&__inner {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding-left: $padding-base;  
+		padding-right: $padding-base;  
+	}
+
+	@include media-breakpoint-up(sm) {
+		&__inner {
+			//margin: 0 -5px;
+			padding: 0;
+		}
+
+		&__inner2 {
+			margin: 0;
+			padding: 0 10px;
+		}
+	}
+}

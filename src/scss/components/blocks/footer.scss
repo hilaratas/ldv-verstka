@@ -1,0 +1,22 @@
+.footer {
+	width: 100%;
+	margin: 0 auto;
+
+	&__wrapper {
+		background:  #0d51b3; 
+	}
+
+	&__inner {
+		max-width: 1140px;
+		width: 100%;
+		margin: 0 auto;
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	&__copyholder {
+		display: inline-block;
+		padding: 15px 0;
+	}
+
+}

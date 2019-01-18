@@ -1,0 +1,20 @@
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+    font-family: 'Iconfont';
+    src: url('../fonts/Iconfont.woff2') format('woff2'),
+         url('../fonts/Iconfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
