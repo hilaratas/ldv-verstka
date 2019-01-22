@@ -1,24 +1,36 @@
 .page {
-    background-color: #fff;
+    background-color: $page-bg;
     height: 100%;
     width: 100%;
-    
+    padding: 0;
+    margin: 0;
+
     &__wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__inner {
+        background: $page-bg;
         min-height: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        padding-bottom: 60px;
     }
-    
+
     &__middle {
         flex: 1 0 auto;
     }
-    
+
     &__header {
-        height: $header-height;
-        flex: 0 0  $header-height;
+        // height: $header-height;
+        // flex: 0 0  $header-height;
     }
-    
+
     &__footer {
        flex: 0 0 auto;
     }

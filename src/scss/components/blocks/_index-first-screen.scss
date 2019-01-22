@@ -1,0 +1,14 @@
+.index-first-screen {
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 60px;
+  background: orange;
+  display: flex;
+  flex-direction: column;
+
+  &__inner {
+    flex-grow: 1;
+    overflow: hidden;
+    background: green;
+  }
+}
