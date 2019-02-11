@@ -28,7 +28,7 @@
 
 	p {
 		margin: 0 0 1rem 0;
-		
+
 		&.top{
 			margin-top: 2rem;
 		}
@@ -36,11 +36,11 @@
 
 	a {
 		transition: all $transition-duration;
-		
+
 		&:not(.button){
 			text-decoration: underline;
 			color: $color-brand-3;
-			
+
 			&:hover {
 				color: lighten($color-brand-3, 30%);
 				text-decoration: none;
@@ -56,12 +56,12 @@
 		    display: inline-block;
 		    vertical-align: top;
 		    margin-bottom: 1.5rem;
-		    
+
 		    @media (min-width:768px){
 			    margin-bottom: 0;
 		    }
 		}
-		
+
 		&[href$=".pdf"], &[href$=".docx"], &[href$=".xlsx"], &[href$=".doc"] {
 			position: relative;
 			padding-left: 33px;
@@ -93,7 +93,7 @@
 	    left: -30px;
 	    position: absolute;
 	    top: 6px;
-	    
+
 	}
 
 	ol { counter-reset: li;}
@@ -103,7 +103,7 @@
 	    counter-increment: li;
 	    text-align: left;
 	    border-radius: 3px;
-	    font-size: $font-size;
+	    font-size: $font-size-base;
 	    font-weight: $font-bold;
 	    left: -30px;
 		top: 0px;
@@ -113,23 +113,23 @@
 		color: $color-brand-1;
 	}
 
-	table { 
-		width: 100%; 
-		max-width: 100%; 
-		border-left: 0px solid transparent; 
-		border-right: 0px solid transparent; 
+	table {
+		width: 100%;
+		max-width: 100%;
+		border-left: 0px solid transparent;
+		border-right: 0px solid transparent;
 		border-top: 0px solid transparent;
 
-		& > tbody { 
+		& > tbody {
 			border: 0px solid transparent;
 			& > tr > th, & > tr > td {
 				padding: $table-cell-padding;
 			}
 			& > tr > th {
-				padding: $table-cell-padding; 
+				padding: $table-cell-padding;
 				text-align: left;
 				border: 1px solid $table-border-color;
-				font-weight: $font-normal;	
+				font-weight: $font-normal;
 			}
 			& > tr > td {
 				border: 1px solid $table-border-color;
@@ -150,12 +150,12 @@
 		}
 
 		&.no-border {
-		
+
 			&.margin{
-				margin: 2rem 0;	
+				margin: 2rem 0;
 			}
-			
-			td, th { 
+
+			td, th {
 				border-bottom: none;
 				padding: 10px;
 			}
@@ -165,28 +165,28 @@
 			td:last-child, th:last-child {
 				padding-right: 0;
 			}
-			
+
 			small{
 				color: $grey-brand-1;
 				font-size: calc( 1rem - 2px );
 			}
-			
+
 		}
 		&.gray-border{
-			
+
 			margin-top: 2rem;
-			   
+
 			th{
 				color: $grey-brand-1;
 			    font-size: 0.9rem;
 			    border-top: none;
 			    border-bottom: 1px solid $grey-brand-1;
-				
+
 			}
 			td{
-			    border-bottom: 1px solid $grey-brand-1;	
+			    border-bottom: 1px solid $grey-brand-1;
 			}
-			
+
 			td:first-child, th:first-child {
 				padding-left: 0;
 			}
@@ -194,18 +194,18 @@
 				padding-right: 0;
 			}
 
-			
-			
+
+
 		}
 	}
-	
 
-	blockquote { 
-		font-weight: $font-bold; 
+
+	blockquote {
+		font-weight: $font-bold;
 		padding-left: 33px;
 		border-left: 30px;
 		margin: 27px 0;
-		position: relative; 
+		position: relative;
 
 		&:before {
 			content: '';
@@ -215,19 +215,19 @@
 			width: 2px;
 			height: 100%;
 			background: $color-brand-3;
-		}	
+		}
 	}
 
 	.nowrap {
 		white-space: nowrap;
 	}
-	
+
 	&--right{
 		text-align: right;
-		
+
 		&-sm{
 			text-align: left;
-			
+
 			@media (min-width:768px){
 				text-align: right;
 			}
@@ -237,7 +237,7 @@
 	&--center{
 		text-align: center;
 	}
-	
+
 	hr{
 	    background-color: $grey-brand-1;
 	    height: 1px;

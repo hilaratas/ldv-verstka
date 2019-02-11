@@ -3,8 +3,8 @@
 ============================================================================= */
 
 // vars
-$button-width: $header-height;
-$button-height: $header-height;
+$button-width: $header-width;
+$button-height: $header-width;
 $cross-width: 20px;
 $cross-height: 20px;
 $bar-thickness: 3px;
@@ -34,12 +34,12 @@ $button-trans-delay: 0.3s;
   border-radius: none;
   cursor: pointer;
   transition: background $button-trans-delay;
-  
+
   span {
     height: $bar-thickness;
-    background: rgb(255,255,255);
+    background: $color-brand-1;
     border-radius: $bar-thickness/2;
-  
+
     &:before, &:after {
       position: absolute;
       display: block;
@@ -66,7 +66,7 @@ $button-trans-delay: 0.3s;
     right: ($button-width / 2) - ( $cross-width / 2);
 
     &:before, &:after {
-      background-color: $color-brand-6; 
+      background-color: $color-brand-1;
     }
   }
 
@@ -125,7 +125,7 @@ $button-trans-delay: 0.3s;
 
 .humb__htx.active span {
   background: none;
-  transition: background $button-trans-delay 0s; 
+  transition: background $button-trans-delay 0s;
 }
 
 .humb__htx.active span::before {

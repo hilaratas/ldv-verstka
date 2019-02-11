@@ -1,15 +1,24 @@
 // DIMENSIONS: WIDTHS, HEIGHTS
 $padding-base: 15px;
 
+$body-color: #000;
+$body-bg: #F4F4F4;
+$headings-margin-bottom: 1em;
+$paragraph-margin-bottom: 1em;
+
+
 // Fonts: Base styles
-$font-size: 16px;
-$font-family: 'Helvetica Neue', Arial, sans-serif;
+$font-size-base: 16px;
+$font-family-base: Lato, 'Helvetica Neue', Arial, sans-serif;
+$font-weight-base: normal;
 $font-size-base: 1rem; // 16px
+$line-height-base: 1.25em;
+$line-height-ratio: 1.25;
+
 $font-size-small: 0.86rem; // 13px
 $font-size-extra-small: 0.8rem; //12px
 $font-size-extra-small2: 0.73rem; //11px
-$line-height-base: 1.25rem; // 20px
-$line-height-ratio: 1.25;
+
 
 // Fonts: Weights
 $font-light: 300;
@@ -25,8 +34,8 @@ $font-size-h4: 1.5rem; // 24px
 $font-size-h5: 1.125rem; // 18px
 $font-size-h6: 1rem; // 16px
 
-$font-size-h1-sm: 2.5rem; 
-$font-size-h2-sm: 1.75rem; 
+$font-size-h1-sm: 2.5rem;
+$font-size-h2-sm: 1.75rem;
 $font-size-h3-sm: 1.6rem;
 $font-size-h4-sm: 1.35rem; //21px
 $font-size-h5-sm: 1.15rem;
@@ -98,13 +107,12 @@ $h5-indent-bottom: 10px;
 $h6-indent-top: 15px;
 $h6-indent-bottom: 10px;
 
-
-
 // Colors: Brand
-$color-brand-1: #030303;
-$color-brand-2: #2a67c7;
-$color-brand-3: #0d51b3;  //используется
-$color-brand-4: #556787; // используется. Не переопределять
+$black: #000;
+$color-brand-1: #554A46;
+$color-brand-2: #9E9085;
+$color-brand-3: #D2CBC1;  //используется
+$color-brand-4: #556787;
 $color-brand-5: #1d3456;
 $color-brand-6: #fff;
 
@@ -112,11 +120,9 @@ $color-brand-6: #fff;
 $color-brand-100: #1d3456;
 
 // GREY COLORS
-$grey-brand-1: #2d3142;
-$grey-brand-2: #bcbcbc;
+$grey-brand-1: #2A2A2E;
+$grey-brand-2: #F4F4F4;
 $grey-brand-3: #d6d6d6;
-
-
 
 $red-brand-1: #ea4c3a;
 $red-brand-2: #b32123;
@@ -137,7 +143,7 @@ $table-border-color: $grey-brand-2 !default;
 
 $brand-warning: $red-brand-1;
 
-$header-height: 80px;
+$header-width: 70px;
 
 $color-bg: #f4f4f4;
 $color-icon: #9ab9c9;
@@ -197,7 +203,7 @@ $form-el-small-border: $border-width;
 $form-el-small-height: calc( #{$form-el-small-line-height} +  #{2 * $form-el-small-padding-vert} + #{2 * $form-el-small-border} );
 
 // Buttons
-$button-bg: $color-brand-3;
+$button-bg: $color-brand-1;
 $button-bg-hover: darken($color-brand-3, 5%);
 $button-border-hover: darken($color-brand-3, 10%);
 
@@ -219,10 +225,10 @@ $radio-color-border: $grey-brand-3;
 $checkbox-color: $color-brand-3;
 $checkbox-color-border: $grey-brand-3;
 
-
-
 // MAIN MENU
 $main-menu-hover-bg: $grey-brand-3;
+
+$dt-font-weight: $font-family-base;
 
 
 //== Media queries breakpoints

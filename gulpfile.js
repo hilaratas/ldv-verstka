@@ -44,9 +44,7 @@ const config = {
     html: 'src/*.html',
     cssCopy: 'src/css/**/*.css',
     sassCustom: 'src/scss/style.scss',
-    bootstrap: 'src/scss/bootstrap4.scss',
-    bootstrapGrid: 'src/scss/bootstrap4-grid.scss',
-    cssVendor: 'src/scss/vendor/*.*', 
+    cssVendor: 'src/scss/vendor/*.*',
     jsVendors: 'src/js/vendors/*.js',
     jsPlugins: 'src/js/plugins/*.js',
     jsCustom: 'src/js/main.js',
@@ -59,7 +57,7 @@ const config = {
     iconfont: 'src/fonts/iconfont-store/*.svg',
     fonts: 'src/fonts/**/*.*',
   },
-  
+
   build: {
     html: 'build/',
     cssCopy: 'build/css',
@@ -67,12 +65,12 @@ const config = {
     jsVendors: 'build/js/vendors/',
     jsPlugins: 'build/js/plugins/',
     css: 'build/css/',
-    svgSprite: 'build/media/', 
+    svgSprite: 'build/media/',
     svgDesign: 'build/media/',
     svgExample: 'build/example/',
     imgSprite: 'build/sprites/',
     imgSpriteCss: 'build/css/',
-    imgDesign: 'build/media/',  
+    imgDesign: 'build/media/',
     imgExample: 'build/example/',
     iconfont: 'build/fonts/',
     fonts: 'build/fonts/'
@@ -82,8 +80,6 @@ const config = {
     html: ['src/**/*.html'],
     cssCopy: 'src/css/**/*.css',
     cssCustom: ['src/scss/style.scss', 'src/scss/_variables_components.scss', 'src/scss/components/**/*.scss'],
-    bootstrap: ['src/scss/bootstrap4.scss', 'src/scss/_variables_bootstrap4.scss', 'src/scss/bootstrap4/**/*/css'],
-    bootstrapGrid: ['src/scss/bootstrap4-grid.scss', 'src/scss/_variables_bootstrap.scss', 'src/scss/bootstrap/**/*/css'],
     jsVendors: ['src/js/vendors/*.js'],
     jsPlugins: ['src/js/plugins/*.js'],
     jsCustom:  ['src/js/main.js', 'src/js/components/**/*.js'],
@@ -137,16 +133,6 @@ gulp.task('cssCopy', function(){
     .pipe(gulp.dest(config.build.cssCopy));
 });
 
-gulp.task('bootstrap4', () => { return gulp.src(config.src.bootstrap).pipe(plumber())
-    .pipe(sass()).pipe(autoprefixer({ browsers: ['last 4 versions'] }))
-    .pipe(mmq()).pipe(rename('bootstrap4.css'))
-    .pipe(gulp.dest(config.build.css)); });
-
-gulp.task('bootstrap4Grid', () => { return gulp.src(config.src.bootstrapGrid).pipe(plumber())
-    .pipe(sass()).pipe(autoprefixer({ browsers: ['last 4 versions'] }))
-    .pipe(mmq()).pipe(rename('bootstrap4-grid.css'))
-    .pipe(gulp.dest(config.build.css)); });
-
 gulp.task('cssCustom', function() {
   return gulp.src(config.src.sassCustom)
     .pipe(plumber())
@@ -191,7 +177,7 @@ gulp.task('svgDesign', () => gulp.src(config.src.svgDesign).pipe(svgmin()).pipe(
 
 gulp.task('svgExample', () => gulp.src(config.src.svgExample).pipe(svgmin()).pipe(gulp.dest(config.build.svgExample)) );
 
-gulp.task('imgDesign', () => { 
+gulp.task('imgDesign', () => {
     let imageminCfg = { progressive: true, removeViewBox: false, use: [pngquant()] };
     return gulp.src(config.src.imgDesign).pipe(plumber())
       .pipe(imagemin(imageminCfg)).pipe(gulp.dest(config.build.imgDesign));
@@ -241,13 +227,17 @@ gulp.task('watch', function(){
   gulp.watch(config.src.svgExample, gulp.series('svgExample', reload));
   gulp.watch(config.src.imgDesign, gulp.series('imgDesign', reload));
   gulp.watch(config.src.imgExample, gulp.series('imgExample', reload));
-  gulp.watch(config.watch.bootstrap, gulp.series('bootstrap4', reload));
-  gulp.watch(config.watch.bootstrapGrid, gulp.series('bootstrap4Grid', reload));
   gulp.watch(config.watch.cssCopy, gulp.series('cssCopy', reload));
   gulp.watch(config.watch.cssCustom, gulp.series('cssCustom', reload));
 });
 
-build = gulp.series('del', 'html', 'jsPlugins', 'jsVendors', 'jsCustom', 'svgSprite', 'svgDesign', 'svgExample', 'imgDesign', 'imgExample', 'fonts', 'cssCopy', 'bootstrap4', 'bootstrap4Grid', 'cssCustom');
+build = gulp.series('del',
+  'html',
+  'cssCopy', 'cssCustom',
+  'jsPlugins', 'jsVendors', 'jsCustom',
+  'svgSprite', 'svgDesign', 'svgExample',
+  'imgDesign', 'imgExample',
+  'fonts');
 
 gulp.task('default', build);
 gulp.task('dev', gulp.series(build, gulp.parallel('serve', 'watch')));

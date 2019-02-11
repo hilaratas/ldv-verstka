@@ -59,7 +59,7 @@ body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   font-weight: $font-weight-base;
-  line-height: $line-height-base;
+  line-height: 1.4;
   color: $body-color;
   text-align: left; // 3
   background-color: $body-bg; // 2
@@ -213,7 +213,7 @@ a:not([href]):not([tabindex]) {
   color: inherit;
   text-decoration: inherit;
 
-  @include hover-focus {
+  &:hover, &:focus {
     color: inherit;
     text-decoration: inherit;
   }
@@ -280,9 +280,6 @@ table {
 }
 
 caption {
-  padding-top: $table-cell-padding;
-  padding-bottom: $table-cell-padding;
-  color: $table-caption-color;
   text-align: left;
   caption-side: bottom;
 }
@@ -301,7 +298,6 @@ th {
 label {
   // Allow labels to use `margin` for spacing.
   display: inline-block;
-  margin-bottom: $label-margin-bottom;
 }
 
 // Remove the default `border-radius` that macOS Chrome adds.

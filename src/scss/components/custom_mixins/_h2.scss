@@ -1,6 +1,6 @@
-@mixin h2 () { 
+@mixin h2 () {
 	font-size: $font-size-h2;
-	font-family: $font-family;
+	font-family: $font-family-base;
 	font-weight: $font-normal;
 	line-height: $line-height-h2;
 	color: $color-brand-1;
@@ -9,7 +9,7 @@
 	text-align: left;
 
 	&:first-child {
-		margin-top: 0; 
+		margin-top: 0;
 	}
 
 	@media (max-width: $screen-sm-max) {

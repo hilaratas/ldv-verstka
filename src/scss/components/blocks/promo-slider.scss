@@ -1,0 +1,119 @@
+.promo-slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  flex-basis: 100%;
+  overflow: hidden;
+
+  .slick-list {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .slick-track {
+    height: calc(100vh - 60px);
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 15;
+    width: 50px;
+    height: 50px;
+    border: 2px solid $color-brand-1;
+    border-radius: 50%;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: transparent;
+    &:focus {
+      outline: none;
+    }
+  }
+  .slick-arrow.slick-prev {
+    left: calc(20px + #{$header-width});
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 15;
+      width: 15px;
+      height: 15px;
+      top: 50%;
+      right: 50%;
+      margin-top: -7px;
+      margin-right: -9px;
+      border-top: 2px solid $color-brand-1;
+      border-left: 2px solid $color-brand-1;
+      transform: rotate(-45deg);
+    }
+  }
+  .slick-arrow.slick-next {
+    right: 20px;
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 15;
+      width: 15px;
+      height: 15px;
+      top: 50%;
+      left: 50%;
+      margin-top: -7px;
+      margin-left: -9px;
+      border-top: 2px solid $color-brand-1;
+      border-right: 2px solid $color-brand-1;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__item {
+    background-position: center center;
+    background-size: cover;
+    flex-direction: column;
+    position: relative;
+
+    &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+  }
+  }
+
+  &__promo-holder {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__promo {
+    width: 60%;
+  }
+  &__text {
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.2;
+  }
+  &__button-holder {
+    margin-top: 20px;
+  }
+
+
+}

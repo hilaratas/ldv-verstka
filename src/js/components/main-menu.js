@@ -4,6 +4,9 @@ export default function () {
         htmlEl = document.documentElement,
         $mainMenu = $('#js-main-menu');
 
+    if ( !gumbEl ) {
+      return;
+    }
 
     gumbEl.addEventListener('click', function(){
         htmlEl.classList.toggle("is-main-menu-open");

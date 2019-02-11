@@ -1,9 +1,3 @@
 .footer-free {
-	@include media-breakpoint-only(xs) {
-		padding-top: 40px;
-	}
 
-	@include media-breakpoint-up(sm) {
-		padding-top: 60px;
-	}
 }
