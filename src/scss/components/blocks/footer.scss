@@ -4,19 +4,23 @@
 
 	&__wrapper {
 		background: #2A2A2E;
+
+    @media #{$media-not-phone} {
+      padding-left: calc(40px + #{$header-width});
+      padding-right: 40px;
+    }
 	}
 
 	&__inner {
 		max-width: 1140px;
 		width: 100%;
 		margin: 0 auto;
-		padding-right: 30px;
-		padding-left: 30px;
 	}
 
 	&__copyholder {
 		display: inline-block;
 		padding: 15px 0;
+    color: #fff;
 	}
 
 }

@@ -2,29 +2,29 @@
 
 	@include clearfix();
 
-	h1, .h1 {
-		@include h1();
-	}
+	// h1, .h1 {
+	// 	@include h1();
+	// }
 
-	h2, .h2 {
-		@include h2();
-	}
+	// h2, .h2 {
+	// 	@include h2();
+	// }
 
-	h3, .h3  {
-		@include h3();
-	}
+	// h3, .h3  {
+	// 	@include h3();
+	// }
 
-	h4, .h4  {
-		@include h4();
-	}
+	// h4, .h4  {
+	// 	@include h4();
+	// }
 
-	h5, .h5  {
-		@include h5();
-	}
+	// h5, .h5  {
+	// 	@include h5();
+	// }
 
-	h6, .h6  {
-		@include h6();
-	}
+	// h6, .h6  {
+	// 	@include h6();
+	// }
 
 	p {
 		margin: 0 0 1rem 0;
@@ -39,28 +39,14 @@
 
 		&:not(.button){
 			text-decoration: underline;
-			color: $color-brand-3;
+			color: $color-brand-4;
 
 			&:hover {
-				color: lighten($color-brand-3, 30%);
+				color: lighten($color-brand-4, 30%);
 				text-decoration: none;
 			}
 		}
-		&.black{
-		    margin: 3px 0;
-		    color: #000;
-		    text-decoration: none !important;
-		    font-weight: 500;
-		    font-size: 0.93rem;
-		    line-height: 1;
-		    display: inline-block;
-		    vertical-align: top;
-		    margin-bottom: 1.5rem;
 
-		    @media (min-width:768px){
-			    margin-bottom: 0;
-		    }
-		}
 
 		&[href$=".pdf"], &[href$=".docx"], &[href$=".xlsx"], &[href$=".doc"] {
 			position: relative;
@@ -245,9 +231,9 @@
 	    margin: 2rem 0;
 	}
 
-	@media (max-width: $screen-xs-max) {
-		text-align: left;
-	}
+  & > *:last-child {
+    margin-bottom: 0;
+  }
 
 
 }

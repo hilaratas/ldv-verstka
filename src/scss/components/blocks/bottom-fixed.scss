@@ -1,9 +1,17 @@
 .bottom-fixed {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  background: $grey-brand-2;
-  border-top: 1px solid rgba(0, 0, 0, 0.11);
+  @media #{$media-not-phone} {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: $z-i-bottom-fixed;
+    background: $grey-brand-2;
+    border-top: 1px solid $grey-brand-3;
+  }
+
+  @media #{$media-phone} {
+    position: relative;
+  }
+
 }

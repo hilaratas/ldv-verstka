@@ -1,7 +1,7 @@
-@mixin h3 () { 
-	font-size: $font-size-h3;
+@mixin h3 () {
+	font-size: $font-size-h3-desk;
 	font-weight: $font-medium;
-	line-height: $line-height-h3;
+	line-height: $line-height-h3-desk-ratio;
 	color: $color-brand-1;
 	margin: $h3-indent-top 0 $h3-indent-bottom 0;
 	text-align: left;
@@ -10,13 +10,13 @@
 		margin-top: 0;
 	}
 
-	@media (max-width: $screen-sm-max) {
-		font-size: $font-size-h3-sm;
-		line-height: $line-height-h3-sm;
+	@media (max-width: $tablet-max) {
+		font-size: $font-size-h3-tablet;
+		line-height: $line-height-h3-tablet-ratio;
 	}
 
-	@media (max-width: $screen-xs-max) {
-		font-size: $font-size-h3-xs;
-		line-height: $line-height-h3-xs;
+	@media (max-width: $big-phone-max) {
+		font-size: $font-size-h3-phone;
+		line-height: $line-height-h3-phone-ratio;
 	}
 }

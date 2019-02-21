@@ -53,6 +53,10 @@
       border-left: 2px solid $color-brand-1;
       transform: rotate(-45deg);
     }
+
+    @media #{$media-phone} {
+      left: 20px;
+    }
   }
   .slick-arrow.slick-next {
     right: 20px;

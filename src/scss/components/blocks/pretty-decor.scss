@@ -1,0 +1,26 @@
+.pretty-decor {
+  min-height: 70px;
+  position: relative;
+  background-image: url(../media/header-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin-bottom: 2rem;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(#2A2A2E, 0.3);
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+}

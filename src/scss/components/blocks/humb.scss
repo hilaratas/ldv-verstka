@@ -57,6 +57,12 @@ $button-trans-delay: 0.3s;
   width: $button-width;
   height: $button-width;
   position: relative;
+  border: none;
+
+  @media #{$media-phone} {
+    width: 60px;
+    height: 60px;
+  }
 
   span {
     display: block;

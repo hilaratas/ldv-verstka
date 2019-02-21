@@ -23,4 +23,42 @@
 	&--h6 {
 		@include h6();
 	}
+
+  &--pretty {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    &:before, &:after {
+      content: '';
+      flex-grow: 1;
+      flex-basis: auto;
+      height: 2px;
+      background: $color-brand-1;
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+  }
+
+  &--black {
+    color: #000;
+  }
+
+  &--blue {
+    color: #31666E;
+  }
+
+  &--green {
+    color: #839831;
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+  &--mb0 {
+    margin-bottom: 0;
+  }
 }

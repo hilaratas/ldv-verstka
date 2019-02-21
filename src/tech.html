@@ -14,7 +14,7 @@
         </div>
 
         <div class="page__middle">
-          @@include('./html_include/blocks.html')
+          @@include('./html_include/tech.html')
         </div>
 
         <div class="page__footer">
@@ -28,5 +28,12 @@
     @@include('./html_include/popups.html')
 
     @@include('./html_include/scripts.html')
+
+    <!-- Эта часть только для локальной разработки. Начало. -->
+    <!-- Не копировать на боевой сайт -->
+    <link rel="stylesheet" type="text/css" href="./css/link-panel-local-build-only.css">
+    @@include('./html_include/link-panel-local-build-only.html')
+    <!-- Эта часть только для локальной разработки. Конец. -->
+    <!-- Не копировать на боевой сайт -->
 </body>
 </html>

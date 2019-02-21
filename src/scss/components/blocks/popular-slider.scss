@@ -1,0 +1,141 @@
+.popular-slider {
+  text-align: center;
+  &__item {
+    &:focus {
+      outline: none;
+    }
+  }
+  &__inner {
+    padding-left: 15px;
+    padding-right: 15px;
+    will-change: transform;
+    @media #{$media-not-phone} {
+      transform: scale(0.8);
+      opacity: 0.8;
+      transition: all 0.3s;
+    }
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+  }
+  &__img-holder {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 150%;
+    background: #3B3B40;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__text {
+    padding: 15px 30px;
+    background: #35353A;
+    color: #fff;
+  }
+  @media #{$media-tablet} {
+    .slick-track {
+      .slick-active + .slick-active {
+        .popular-slider__inner {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      .slick-active + .slick-active + .slick-active {
+        .popular-slider__inner {
+          transform: scale(0.8);
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  @media #{$media-not-phone} {
+    .slick-track {
+      .slick-active + .slick-active + .slick-active {
+        .popular-slider__inner {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      .slick-active + .slick-active + .slick-active + .slick-active {
+        .popular-slider__inner {
+          transform: scale(0.8);
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  .slick-dots {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    padding: 0 10px;
+    background: #35353A;
+    border-radius: 22px;
+    box-sizing: content-box;
+    height: 35px;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      padding-right: 10px;
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: 14px;
+      overflow: hidden;
+    }
+    button {
+      position: relative;
+      width: 14px;
+      height: 14px;
+      border: 1px solid $grey-brand-1;
+      padding: 0;
+      border-radius: 50%;
+      text-indent: -999px;
+      background: transparent;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        margin-left: -3px;
+        margin-top: -3px;
+        background: #fff;
+      }
+    }
+    li.slick-active {
+      button:before {
+        background: #92C57A;
+      }
+    }
+  }
+
+  .is-mobile & .slick-dots {
+    button:after {
+      content: '';
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      top: 50%;
+      left: 50%;
+      margin-left: -17px;
+      margin-top: -17px;
+    }
+  }
+}

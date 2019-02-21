@@ -1,0 +1,39 @@
+.hsoc {
+  &__title-holder {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+  }
+  &__title {
+    display: inline-block;
+    font-size: 12px;
+    color: black;
+  }
+  &__sep {
+    display: block;
+    width: 1px;
+    height: 30px;
+    vertical-align: top;
+    background: black;
+    margin: 10px auto;
+  }
+  &__icon-link {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-radius: 4px;
+    transition: all 0.3s;
+
+    .is-not-mobile &:hover {
+      border-radius: 50%;
+    }
+  }
+  &__icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+  }
+}

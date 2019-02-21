@@ -1,5 +1,5 @@
 .form {
-	
+
     &__row {
         margin: 0 0 10px 0;
         position: relative;
@@ -7,7 +7,7 @@
         &:last-child {
             margin-bottom: 0;
         }
-		
+
     }
 
     &__table {
@@ -17,7 +17,7 @@
 
     &__table-row {
         display: table-row;
-        
+
         &:last-child{
 			.form__table-cell{
 				padding-bottom: 0;
@@ -34,7 +34,7 @@
         }
         &--wide{
 	        width: 100%;
-	        padding: 0 1rem; 
+	        padding: 0 1rem;
         }
     }
 
@@ -94,32 +94,32 @@
 		vertical-align: top;
 		text-align: left;
 		margin-bottom: -0.3333rem;
-		
+
 		@media (min-width:768px){
-			margin: 0.4rem 0;				
+			margin: 0.4rem 0;
 		}
 	}
-    
+
 	&__img {
 		max-width: none;
 		right: 15px;
 		margin-top: 1rem;
-        position: absolute;         
+        position: absolute;
         margin-top: 0;
-		
-		@media (max-width:$screen-sm-max){
-			position: static;			
+
+		@media (max-width:$tablet-max){
+			position: static;
 			margin-top: 9px;
 		}
-		
-		&--top { 
-		    @media (min-width:$screen-md-min){
+
+		&--top {
+		    @media (min-width:$small-desk-min){
 			    margin-top: -9px;
 		    }
 		}
 
         &--top0-xs {
-            @media (max-width:$screen-xs-max){
+            @media (max-width:$big-phone-max){
                 margin-top: 0;
             }
         }
@@ -143,35 +143,35 @@
         }
     }
 
-	
-	
+
+
 
 	&__link{
 		color: $grey-brand-1;
 		text-decoration: none !important;
 		line-height: 1.3334rem;
-		margin: 0.4rem 0;	
+		margin: 0.4rem 0;
 		display: inline-block;
 		vertical-align: top;
 	}
 	&__text{
 		line-height: 1.3334rem;
-		margin: 0.4rem 0;		
+		margin: 0.4rem 0;
 	}
 	&__small{
 		color: $grey-brand-1;
 		font-size: 0.8rem;
-		line-height: 1rem;		
+		line-height: 1rem;
 	}
 	&__separator{
 		margin: 1rem 0;
 		border-bottom: 1px solid $grey-brand-1;
 		position: relative;
-		
+
 		@media (min-width:768px){
 			margin: 2rem 0;
 		}
-		
+
 		&-text{
 		    position: absolute;
 		    top: -1rem;
@@ -180,21 +180,21 @@
 		    font-size: 0.8rem;
 		    left: 0;
 		    right: 0;
-		    
+
 		    &-inner{
 			    padding: 0 15px;
 			    background: #fff;
 		    }
 		}
 	}
-	
-	
-	
+
+
+
 	input[type="radio"] + label, input[type="checkbox"] ~ label:not(.error){
-		
+
 		line-height: 1.25rem;
-		margin-top: 0.4rem;		
-		
+		margin-top: 0.4rem;
+
 		&:before{
 			top:0;
 		}
@@ -202,10 +202,10 @@
 			top: 5px;
 		}
 	}
-	
+
 	[class^='col-']{
 		margin-bottom: 0.6666rem;
-		
+
 		@media (min-width:768px){
 			margin-bottom: 0;
 		}

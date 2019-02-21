@@ -1,8 +1,8 @@
 @mixin h2 () {
-	font-size: $font-size-h2;
+	font-size: $font-size-h2-desk;
 	font-family: $font-family-base;
 	font-weight: $font-normal;
-	line-height: $line-height-h2;
+	line-height: $line-height-h2-desk-ratio;
 	color: $color-brand-1;
 	margin-top: $h2-indent-top;
 	margin-bottom: $h2-indent-bottom;
@@ -12,13 +12,13 @@
 		margin-top: 0;
 	}
 
-	@media (max-width: $screen-sm-max) {
-		font-size: $font-size-h2-sm;
-		line-height: $line-height-h2-sm;
+	@media (max-width: $tablet-max) {
+		font-size: $font-size-h2-tablet;
+		line-height: $line-height-h2-tablet-ratio;
 	}
 
-	@media (max-width: $screen-xs-max) {
-		font-size: $font-size-h2-xs;
-		line-height: $line-height-h2-xs;
+	@media (max-width: $big-phone-max) {
+		font-size: $font-size-h2-phone;
+		line-height: $line-height-h2-phone-ratio;
 	}
 }

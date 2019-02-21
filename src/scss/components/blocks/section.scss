@@ -1,6 +1,8 @@
 .section {
-  &--index {
-    padding-left: $header-width;
+  @media #{$media-not-phone} {
+    &--index {
+      padding-left: $header-width;
+    }
   }
 
 	&__header {
@@ -15,6 +17,11 @@
 		padding-left: $padding-base;
 		padding-right: $padding-base;
 	}
+
+  &__wide {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 
 
 }
