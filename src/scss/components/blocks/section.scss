@@ -19,8 +19,14 @@
 	}
 
   &__wide {
-    margin-left: 40px;
-    margin-right: 40px;
+    @media #{$media-not-phone} {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    @media #{$media-phone} {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
 
 

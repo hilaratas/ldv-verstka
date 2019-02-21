@@ -1,0 +1,92 @@
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
+  &__bl {
+  display: flex;
+  flex-wrap: wrap;
+  }
+  &__item {
+    background: #fff;
+  }
+  &__img-holder {
+    position: relative;
+    @media #{$media-not-small-phone} {
+      max-width: 50%;
+      flex: 1 0 50%;
+    }
+    @media #{$media-small-phone} {
+      max-width: 100%;
+      flex: 1 0 100%;
+    }
+  }
+  &__img-wrapper {
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__text-holder {
+    @media #{$media-not-small-phone} {
+      max-width: 50%;
+      flex: 1 0 50%;
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+    }
+    @media #{$media-small-phone} {
+      max-width: 100%;
+      flex: 1 0 100%;
+      padding: 20px 20px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__text-wrapper {
+    flex: 1 1 100%;
+  }
+  &__title {
+    font-weight: bold;
+    color: $blue-brand-1;
+    line-height: 1.3;
+    @media #{$media-not-phone} {
+      margin-bottom: 1.7rem;
+    }
+    @media #{$media-phone} {
+      margin-bottom: 12px;
+    }
+
+  }
+  &__link-holder {
+    @media #{$media-not-phone} {
+      margin-top: 1.7rem;
+    }
+    @media #{$media-phone} {
+      margin-top: 12px;
+    }
+  }
+  &__list {
+    @media #{$media-not-small-phone} {
+      .about__item:nth-child(2n) {
+        .about__img-holder {
+          order: 1;
+        }
+        .about__text-holder {
+          order: 0;
+        }
+      }
+    }
+    @media #{$media-small-phone} {
+      margin-top: -20px;
+      .about__item {
+        margin-top: 20px;
+      }
+    }
+  }
+}

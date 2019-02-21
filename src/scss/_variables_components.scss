@@ -98,13 +98,11 @@ $grey-brand-1: #2A2A2E;
 $grey-brand-2: #F4F4F4;
 $grey-brand-3: #d6d6d6;
 
-$red-brand-1: #ea4c3a;
-$red-brand-2: #b32123;
-$green-brand-1: #097b00;
+$red-brand-1: #ea4c3a; // не установлен
+$blue-brand-1:  #3E8096; //  установлен
+$green-brand-1: #097b00; // не установлен
 
 $page-bg: #F1F1F1;
-
-$color-error: $red-brand-1;
 
 $border-radius: 3px;
 $border-width: 1px;
@@ -173,10 +171,6 @@ $button-bg: $color-brand-1;
 $button-bg-hover: darken($color-brand-3, 5%);
 $button-border-hover: darken($color-brand-3, 10%);
 
-// RED BUTTON
-$button-bg2: $red-brand-1;
-$button-bg2-hover: $red-brand-1;
-
 //INPUTS
 $input-color-border: $grey-brand-3;
 $input-color-border-focus: $color-brand-2;
@@ -205,8 +199,6 @@ $small-phone-min: 320px;
 $small-phone-max: 640px;
 $big-phone-min: 641px;
 $big-phone-max: 767px;
-$huge-phone-min: 640px;
-$huge-phone-max: 767px;
 $tablet-min: 768px;
 $tablet-max: 1024px;
 $small-desk-min: 1025px;
@@ -218,13 +210,13 @@ $hd-desk-min: 1920px;
 $media-phone: "(max-width: #{$big-phone-max})";
 $media-small-phone:  "(max-width: #{$small-phone-max})";
 $media-big-phone: "(min-width: #{$big-phone-min}) and (max-width: #{$big-phone-max})";
-$media-huge-phone: "(min-width: #{$huge-phone-min}) and (max-width: #{$huge-phone-max})";
 $media-tablet: "(min-width: #{$tablet-min}) and (max-width: #{$tablet-max})";
 $media-small-desk: "(min-width: #{$small-desk-min}) and (max-width: #{$small-desk-max})";
 $media-medium-desk: "(min-width: #{$medium-desk-min}) and (max-width: #{$medium-desk-max})";
 $media-hd-desk: "(min-width: #{$hd-desk-min})";
 $media-desk: "(min-width: #{$small-desk-min})";
 $media-not-phone: "(min-width: #{$tablet-min})";
+$media-not-small-phone: "(min-width: #{$big-phone-min})";
 $media-not-desk: "(max-width: #{$tablet-max})";
 
 // Z-INDEX
