@@ -14,10 +14,14 @@
       opacity: 0.8;
       transition: all 0.3s;
     }
+    @media #{$media-phone} {
+      max-height: 100vh;
+    }
   }
   &__link {
     display: block;
     text-decoration: none;
+
   }
   &__img-holder {
     position: relative;
