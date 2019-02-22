@@ -15,8 +15,13 @@
 		line-height: $line-height-h4-tablet-ratio;
 	}
 
-	@media (max-width: $big-phone-max) {
-		font-size: $font-size-h4-phone;
-		line-height: $line-height-h4-phone-ratio;
-	}
+	@media #{$media-big-phone} {
+    font-size: $font-size-h4-big-phone;
+    line-height: $line-height-h4-big-phone-ratio;
+  }
+
+  @media #{$media-small-phone} {
+    font-size: $font-size-h4-small-phone;
+    line-height: $line-height-h4-small-phone-ratio;
+  }
 }

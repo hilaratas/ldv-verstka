@@ -6,6 +6,21 @@
   background-repeat: no-repeat;
   padding: 0;
   margin-bottom: 2rem;
+  @media #{$media-desk} {
+    padding-bottom: 10px;
+  }
+  @media #{$media-tablet} {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  @media #{$media-big-phone} {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  @media #{$media-small-phone} {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
 
   &:before {
     content: '';

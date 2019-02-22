@@ -15,8 +15,13 @@
 		line-height: $line-height-h3-tablet-ratio;
 	}
 
-	@media (max-width: $big-phone-max) {
-		font-size: $font-size-h3-phone;
-		line-height: $line-height-h3-phone-ratio;
-	}
+	@media #{$media-big-phone} {
+    font-size: $font-size-h3-big-phone;
+    line-height: $line-height-h3-big-phone-ratio;
+  }
+
+  @media #{$media-small-phone} {
+    font-size: $font-size-h3-small-phone;
+    line-height: $line-height-h3-small-phone-ratio;
+  }
 }

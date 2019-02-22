@@ -1,22 +1,27 @@
 @mixin h6 () {
-    font-size: $font-size-h6-desk;
-    font-weight: $font-bold;
-    line-height: $line-height-h6-desk-ratio;
-    color: $color-brand-1;
-    margin: $h6-indent-top 0 $h6-indent-bottom 0;
-    text-align: left;
+  font-size: $font-size-h6-desk;
+  font-weight: $font-bold;
+  line-height: $line-height-h6-desk-ratio;
+  color: $color-brand-1;
+  margin: $h6-indent-top 0 $h6-indent-bottom 0;
+  text-align: left;
 
-    &:first-child {
-        margin-top: 0;
-    }
+  &:first-child {
+      margin-top: 0;
+  }
 
-    @media (max-width: $tablet-max) {
-        font-size: $font-size-h6-tablet;
-        line-height: $line-height-h6-tablet-ratio;
-    }
+  @media (max-width: $tablet-max) {
+    font-size: $font-size-h6-tablet;
+    line-height: $line-height-h6-tablet-ratio;
+  }
 
-    @media (max-width: $big-phone-max) {
-        font-size: $font-size-h6-phone;
-        line-height: $line-height-h6-phone-ratio;
-    }
+  @media #{$media-big-phone} {
+    font-size: $font-size-h6-big-phone;
+    line-height: $line-height-h6-big-phone-ratio;
+  }
+
+  @media #{$media-small-phone} {
+    font-size: $font-size-h6-small-phone;
+    line-height: $line-height-h6-small-phone-ratio;
+  }
 }

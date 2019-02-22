@@ -14,8 +14,12 @@
 	&__inner {
 		max-width: 1200px;
 		margin: 0 auto;
-		padding-left: $padding-base;
-		padding-right: $padding-base;
+		padding-left: 2*$padding-base;
+		padding-right: 2*$padding-base;
+    @media #{$media-small-phone} {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 	}
 
   &__wide {

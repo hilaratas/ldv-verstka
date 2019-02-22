@@ -25,51 +25,65 @@ $font-medium: 500;
 $font-bold: 700;
 
 // FONT-SIZE
-$font-size-h1-desk: (60/18) + rem;
-$font-size-h2-desk: (63px/$font-size-base) + rem;
-$font-size-h3-desk: 2.5rem;
-$font-size-h4-desk: 2rem;
-$font-size-h5-desk: 1.5rem;
+// ДЕСКТОП
+$font-size-h1-desk: (60px/$font-size-base) + rem;
+$font-size-h2-desk: (45px/$font-size-base) + rem;
+$font-size-h3-desk: (30px/$font-size-base) + rem;
+$font-size-h4-desk: (25px/$font-size-base) + rem;
+$font-size-h5-desk: (20px/$font-size-base) + rem;
 $font-size-h6-desk: 1rem;
 
-$font-size-h1-tablet: 2.5rem;
-$font-size-h2-tablet: 1.75rem;
-$font-size-h3-tablet: 1.6rem;
-$font-size-h4-tablet: 1.35rem;
-$font-size-h5-tablet: 1.15rem;
-$font-size-h6-tablet: 0.93rem;
-
-$font-size-h1-phone: 1.9rem;
-$font-size-h2-phone: 1.75rem;
-$font-size-h3-phone: 1.6rem;
-$font-size-h4-phone: 1.35rem;
-$font-size-h5-phone: 1.15rem;
-$font-size-h6-phone: 0.93rem;
-
-// LINE-HEIGHT
-// ДЕСКТОП
-$line-height-h1-desk-ratio: 70/60;
-$line-height-h2-desk-ratio: 0.9;
-$line-height-h3-desk-ratio: 1;
-$line-height-h4-desk-ratio: 1.1;
-$line-height-h5-desk-ratio: 1.2;
+$line-height-h1-desk-ratio: 0.9;
+$line-height-h2-desk-ratio: 1;
+$line-height-h3-desk-ratio: 1.1;
+$line-height-h4-desk-ratio: 1.2;
+$line-height-h5-desk-ratio: 1.3;
 $line-height-h6-desk-ratio: 1.4;
 
 // ПЛАНШЕТ
-$line-height-h1-tablet-ratio: 1.1;
-$line-height-h2-tablet-ratio: 1.9;
-$line-height-h3-tablet-ratio: 1.7;
-$line-height-h4-tablet-ratio: 1.6;
-$line-height-h5-tablet-ratio: 1.3;
-$line-height-h6-tablet-ratio: 1.3;
+$font-size-h1-tablet: (60px/$font-size-base) + rem;
+$font-size-h2-tablet: (45px/$font-size-base) + rem;
+$font-size-h3-tablet: (30px/$font-size-base) + rem;
+$font-size-h4-tablet: (25px/$font-size-base) + rem;
+$font-size-h5-tablet: (20px/$font-size-base) + rem;
+$font-size-h6-tablet: 1rem;
 
-// ТЕЛЕФОН
-$line-height-h1-phone-ratio: 2.1;
-$line-height-h2-phone-ratio: 1.9;
-$line-height-h3-phone-ratio: 1.7;
-$line-height-h4-phone-ratio: 1.6;
-$line-height-h5-phone-ratio: 1.3;
-$line-height-h6-phone-ratio: 1.3;
+$line-height-h1-tablet-ratio: 0.9;
+$line-height-h2-tablet-ratio: 1;
+$line-height-h3-tablet-ratio: 1.1;
+$line-height-h4-tablet-ratio: 1.2;
+$line-height-h5-tablet-ratio: 1.3;
+$line-height-h6-tablet-ratio: 1.4;
+
+// БОЛЬШОЙ ТЕЛЕФОН
+$font-size-h1-big-phone: 2.1rem;
+$font-size-h2-big-phone: 1.75rem;
+$font-size-h3-big-phone: 1.6rem;
+$font-size-h4-big-phone: 1.35rem;
+$font-size-h5-big-phone: 1.15rem;
+$font-size-h6-big-phone: 0.93rem;
+
+$line-height-h1-big-phone-ratio: 0.9;
+$line-height-h2-big-phone-ratio: 1.9;
+$line-height-h3-big-phone-ratio: 1.7;
+$line-height-h4-big-phone-ratio: 1.6;
+$line-height-h5-big-phone-ratio: 1.3;
+$line-height-h6-big-phone-ratio: 1.3;
+
+// МАЛЕНЬКИЙ ТЕЛЕФОН
+$font-size-h1-small-phone: 27px;
+$font-size-h2-small-phone: 1.75rem;
+$font-size-h3-small-phone: 1.6rem;
+$font-size-h4-small-phone: 1.35rem;
+$font-size-h5-small-phone: 1.15rem;
+$font-size-h6-small-phone: 0.93rem;
+
+$line-height-h1-small-phone-ratio: 1.1;
+$line-height-h2-small-phone-ratio: 1.9;
+$line-height-h3-small-phone-ratio: 1.7;
+$line-height-h4-small-phone-ratio: 1.6;
+$line-height-h5-small-phone-ratio: 1.3;
+$line-height-h6-small-phone-ratio: 1.3;
 
 $h1-indent-top: 25px;
 $h1-indent-bottom: 15px;
