@@ -27,9 +27,20 @@ html {
       table-layout: fixed;
       width: 100%;
       padding-bottom: 60px;
+      position: relative;
 
       @media #{$media-phone} {
         padding-bottom: 0;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 1920px;
+        background: $content-bg;
       }
   }
 
@@ -45,6 +56,9 @@ html {
   }
   &__middle-inner {
     max-width: 1920px;
+    background: $content-bg;
+    min-height: 100%;
+    position: relative;
   }
 
   &__footer {

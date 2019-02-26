@@ -23,14 +23,7 @@
 	}
 
   &__wide {
-    @media #{$media-not-small-phone} {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-    @media #{$media-small-phone} {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
+    @include content-wrapper;
   }
 
 

@@ -1,0 +1,35 @@
+.footer-soc {
+  &__header {
+    font-size: 1em;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    flex: 0 0 auto;
+    padding-right: 15px;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    vertical-align: top;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    transition: all 0.3s;
+
+    .is-not-mobile &:hover {
+      border-radius: 50%;
+    }
+  }
+  &__icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+  }
+}

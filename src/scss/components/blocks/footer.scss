@@ -1,26 +1,35 @@
 .footer {
 	width: 100%;
-	margin: 0 auto;
+  position: relative;
+  max-width: 1920px;
 
 	&__wrapper {
 		background: #2A2A2E;
 
     @media #{$media-not-phone} {
-      padding-left: calc(40px + #{$header-width});
-      padding-right: 40px;
+      padding-left: $header-width;
     }
 	}
 
 	&__inner {
-		max-width: 1140px;
-		width: 100%;
-		margin: 0 auto;
+		@include content-wrapper;
 	}
+  &__soc-holder {
+    display: flex;
+    justify-content: end;
+    padding: 15px 0;
+  }
 
-	&__copyholder {
+	&__copy-holder {
 		display: inline-block;
 		padding: 15px 0;
     color: #fff;
 	}
+
+  &__menu-holder {
+    display: flex;
+    justify-content: end;
+    padding: 15px 0;
+  }
 
 }
