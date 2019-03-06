@@ -6,7 +6,7 @@
     padding: 10px 13px;
     line-height: $form-el-line-height;
     height: $form-el-height;
-	font-size: $form-el-font-size;
+    font-size: $form-el-font-size;
     border-radius: $border-radius;
     border: $form-el-border solid $input-color-border;
     box-shadow: none;
@@ -38,7 +38,7 @@
 
     &.error {
         border-color: $brand-warning;
-		
+
         &:focus {
             border-color: $brand-warning;
         }
@@ -75,7 +75,7 @@
     }
 
     &--no-ellipsis {
-       text-overflow: clip; 
+       text-overflow: clip;
     }
 
     &--small {
@@ -84,7 +84,7 @@
         padding: $form-el-small-padding-vert $form-el-small-padding-hor;
         height: $form-el-small-height;
     }
-    
+
     &--big {
         font-size: $form-el-big-font-size;
         line-height: $form-el-big-line-height;

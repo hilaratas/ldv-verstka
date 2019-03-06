@@ -27,7 +27,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            border-radius: 50%; 
+            border-radius: 50%;
             display: block;
             background: transparent;
             transition: background $transition-duration;
@@ -37,13 +37,13 @@
       &:checked + .radio__indicator {
          &:before {
             background: $radio-color;
-         } 
+         }
       }
 
       &:disabled + .radio__indicator {
          background: lighten($radio-color-border, 5%);
       }
-      
+
 	}
 
    & + label {

@@ -2,9 +2,22 @@
   <div class="pretty-decor">
     <div class="pretty-decor__inner">
       <div class="section__inner">
-        <h1 class="title title--h1 title--white title--mb0">Флорариумы</h1>
+        <div class="title title--h1 title--white title--mb0">Флорариумы</div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="section section--index">
+  <div class="section__inner">
+    <nav class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Флорариумы</a></li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Флорариум капля с пятиугольным основанием</a></li>
+      </ul>
+    </nav>
   </div>
 </div>
 
@@ -18,8 +31,74 @@
         <div class="col-sm-12">
           <main>
             <div class="product">
+              <div class="row">
+                <div class="col-3">
+                  <img src="/example/katalog/5kaplya.jpg" alt="Флорариум капля с пятиугольным основанием">
+                </div>
+                <div class="col-9">
+                  <h1 class="title title--h2 title--onl title--blue title--mb0">Флорариум капля с пятиугольным основанием</h1>
+                  <div class="product__price-holder">
+                    <div class="product__price">1000 р.</div>
+                  </div>
+                  <form action="#" method="post">
+                    <input type="hidden" name="id" value="123">
+                    <input type="hidden" name="price" value="1000">
+                    <div class="product__details">
+                      <div class="row">
+                        <div class="col-auto">
+                          <div class="product__colors-holder">
+                            <div class="product__details-title">Цвет швов:</div>
+                            <div class="product__colors">
+                              <div class="row row--6px">
+                                <div class="col-auto">
+                                  <label class="product-color"><input type="radio" name="color" value="black" checked><span class="product-color__indicator"></span></label>
+                                </div>
+                                <div class="col-auto">
+                                  <label class="product-color"><input type="radio" name="color" value="silver"><span class="product-color__indicator"></span></label>
+                                </div>
+                                <div class="col-auto">
+                                  <label class="product-color"><input type="radio" name="color" value="copper"><span class="product-color__indicator"></span></label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="product__count-holder">
+                            <label class="product__details-title">Количество:</label>
+                            <div class="product__count">
+                              <div class="row row--6px">
+                                <div class="col-auto">
+                                  <input type="number" class="input" name="count" value="1" min="1" max="10">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__details">
+                      <div class="row">
+                        <div class="col-10">
+                          <div class="product__details-title">Примечание к заказу:</div>
+                          <textarea class="textarea" name="comment" /></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__submit-holder">
+                      <div class="row">
+                        <div class="col-10">
+                          <button type="submit" class="button button--blue button">Заказать</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
 
+
+                </div>
+              </div>
             </div>
+
           </main>
         </div>
         <!-- /Левая колонка -->

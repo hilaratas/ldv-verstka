@@ -1,0 +1,64 @@
+.product-color {
+  display: inline-block;
+  position: relative;
+  width: $form-el-height;
+  height: $form-el-height;
+  vertical-align: middle;
+
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    & + .product-color__indicator {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: $form-el-border solid $radio-color-border;
+      cursor: pointer;
+
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        width: 10px;
+        height: 6px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        display: block;
+        background: transparent;
+        border-bottom: 2px solid #fff;
+        border-left: 2px solid #fff;
+        transition: background $transition-duration;
+        opacity: 0;
+      }
+    }
+
+    &:checked + .product-color__indicator {
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    &:disabled + .product-color__indicator {
+      background: lighten($radio-color-border, 5%);
+    }
+
+    &[value="black"] + .product-color__indicator{
+      background: #000;
+    }
+    &[value="silver"] + .product-color__indicator{
+      background: #c0c0c0;
+    }
+    &[value="copper"] + .product-color__indicator{
+      background: #b87333;
+    }
+
+
+  }
+
+   & + label {
+      vertical-align: middle;
+   }
+}

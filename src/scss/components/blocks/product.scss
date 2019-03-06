@@ -1,0 +1,20 @@
+.product {
+  &__price-holder {
+    margin-top: 10px;
+  }
+  &__price {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-stretch: condensed;
+  }
+  &__details {
+    margin-top: 15px;
+  }
+  &__details-title {
+    margin-bottom: 10px;
+  }
+  &__submit-holder {
+    margin-top: 18px;
+  }
+}

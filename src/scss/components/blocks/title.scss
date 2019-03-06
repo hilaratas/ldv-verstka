@@ -3,10 +3,26 @@
 	&--h1 {
 		@include h1();
 	}
+  &--h1.title--onl {
+    margin-top: -1px; // не настроен
+  }
 
 	&--h2 {
 	@include h2();
 	}
+
+  &--h2.title--onl{
+    margin-top: -5px;
+    @media (max-width: $tablet-max) {
+      margin-top: -2px;
+    }
+    @media #{$media-big-phone} {
+      margin-top: -2px;
+    }
+    @media #{$media-small-phone} {
+      margin-top: -2px;
+    }
+  }
 
 	&--h3 {
 		@include h3();
@@ -67,4 +83,5 @@
   &--mb0 {
     margin-bottom: 0;
   }
+
 }
