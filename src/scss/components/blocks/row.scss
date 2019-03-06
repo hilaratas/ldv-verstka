@@ -26,13 +26,23 @@
 }
 
 .row {
-  @media (min-width: 1025px) {
+  @media #{$media-desk} {
     @for $i from 1 through $grid-columns {
       &--desk-#{$i} > [class*="col-"] {
         &:nth-child(-n+#{$i}) {
           margin-top: 0;
         }
       }
+    }
+  }
+  @media #{$media-small-phone} {
+    &--small-phone-15px {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    &--small-phone-15px > [class*="col-"] {
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 }

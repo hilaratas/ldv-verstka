@@ -37,8 +37,13 @@
 
     &__item {
       position: relative;
-      border: 1px solid $grey-brand-3;
-      box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.15);
+      @media #{$media-not-small-phone} {
+        border: 2px solid $blue-brand-1;
+      }
+      @media #{$media-small-phone} {
+        border: 1px solid $blue-brand-1;
+      }
+
     }
 
     &__img-holder {
@@ -57,19 +62,30 @@
     }
 
     &__text-holder {
-      position: absolute;
-      width: 70%;
-      padding: 20px;
-      bottom: 20px;
-      right: -20px;
-      background: #fff;
-      border: 1px solid $grey-brand-3;
-      box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.15);
+      @media #{$media-not-small-phone} {
+        position: absolute;
+        width: 70%;
+        padding: 20px;
+        bottom: 20px;
+        right: -20px;
+        background: #fff;
+        border: 2px solid $blue-brand-1;
+        box-shadow:         0px 0px 20px 0px rgba(50, 50, 50, 0.15);
+      }
+      @media #{$media-small-phone} {
+        background: $blue-brand-1;
+        padding: 20px;
+      }
     }
 
     &__text {
-      color: $color-brand-1;
-      font-style: italic;
+      @media #{$media-not-small-phone} {
+        color: $blue-brand-1;
+      }
+      @media #{$media-small-phone} {
+        color: #fff;
+      }
+
     }
 
 
