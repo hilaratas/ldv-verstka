@@ -21,7 +21,7 @@ function SideNav(el) {
   sideContEl.addEventListener('pointermove', onPointerMove);
   sideContEl.addEventListener('pointerup', onPointerUp);
   sideContEl.addEventListener('pointercancel', onPointerUp);
-  //sideContEl.addEventListener('pointerleave', onPointerUp);
+  sideContEl.addEventListener('pointerleave', onPointerUp);
 
   function onsideContElClick(e) {
     // Close only on non content click
