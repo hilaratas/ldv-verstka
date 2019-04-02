@@ -1,0 +1,23 @@
+.product-grid {
+  margin-left: -10px;
+  margin-right: -10px;
+
+  &__item {
+    width: 25%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+
+    @media #{$media-tablet} {
+      width: 33.33%;
+    }
+
+    @media #{$media-phone} {
+      width: 50%;
+    }
+  }
+
+  &__link {
+    display: block;
+  }
+}

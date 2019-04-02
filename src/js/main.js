@@ -15,7 +15,7 @@ import pageReload from './components/page-reload';
 import payTabs from './components/pay-tabs';
 import svgStore from './components/svg-store';
 import aos from './components/aos';
-
+import masonry from './components/masonry';
 
 
 $(function(){
@@ -41,6 +41,7 @@ $(function(){
 	payTabs();
 	svgStore();
   aos();
+  masonry();
 });
 
 

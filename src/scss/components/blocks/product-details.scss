@@ -1,0 +1,29 @@
+.product-details {
+  p {
+    color: grey;
+    margin-bottom: 0.5em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul>li {
+    color: grey;
+  }
+
+  a {
+    transition: all $transition-duration;
+
+    &:not(.button){
+      text-decoration: underline;
+      color: $color-brand-4;
+
+      &:hover {
+        color: lighten($color-brand-4, 30%);
+        text-decoration: none;
+      }
+    }
+  }
+
+}

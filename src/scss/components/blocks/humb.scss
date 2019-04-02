@@ -3,8 +3,8 @@
 ============================================================================= */
 
 // vars
-$button-width: $header-width;
-$button-height: $header-width;
+$button-width: 60px;
+$button-height: 60px;
 $cross-width: 20px;
 $cross-height: 20px;
 $bar-thickness: 3px;
@@ -56,12 +56,14 @@ $button-trans-delay: 0.3s;
 .humb--header {
   width: $button-width;
   height: $button-width;
+  left: 5px;
   position: relative;
   border: none;
 
   @media #{$media-phone} {
     width: 60px;
     height: 60px;
+    left: 0;
   }
 
   span {
