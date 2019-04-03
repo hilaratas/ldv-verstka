@@ -8,188 +8,221 @@
   </div>
 </div>
 
-<div class="section section--index">
-  <div class="section__inner">
-    <nav class="breadcrumbs">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
-        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></li>
-        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Флорариумы</a></li>
-        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Флорариум капля с пятиугольным основанием</a></li>
-      </ul>
-    </nav>
-  </div>
-</div>
+@@include('./breadcrumbs.html')
 
 <section class="section section--index">
-
-  <div class="section__main-content">
-    <div class="section__inner">
-      <main class="main-content" role="main">
-      <div class="row">
-        <!-- Левая колонка -->
-        <div class="col-sm-12">
-          <main>
-            <div class="product">
-              <div class="row">
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <img src="/example/katalog/5kaplya.jpg" alt="Флорариум капля с пятиугольным основанием">
-                </div>
-                <div class="col-12 col-sm-6 col-xl-8">
-                  <h1 class="title title--h2 title--onl title--blue title--mb0">Флорариум капля с пятиугольным основанием</h1>
-                  <div class="product__price-holder">
-                    <div class="product__price">1000 р.</div>
+  <div class="section__inner">
+    <main class="main-content" role="main">
+      <!-- Уникальный контент страницы -->
+      <div class="product">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-xl-4">
+            <img src="/example/katalog/5kaplya.jpg" alt="Флорариум капля с пятиугольным основанием">
+          </div>
+          <div class="col-12 col-sm-6 col-xl-8">
+            <h1 class="title title--h2 title--onl title--blue title--mb0">Флорариум капля с пятиугольным основанием</h1>
+            <div class="product__price-holder">
+              <div class="product__price">1000 р.</div>
+            </div>
+            <form action="#" method="post">
+              <input type="hidden" name="id" value="123">
+              <input type="hidden" name="price" value="1000">
+              <div class="product__details">
+                <div class="row">
+                  <div class="col-auto">
+                    <div class="product__colors-holder">
+                      <div class="product__details-title">Цвет швов:</div>
+                      <div class="product__colors">
+                        <div class="row row--6px">
+                          <div class="col-auto">
+                            <label class="product-color"><input type="radio" name="color" value="black" checked><span class="product-color__indicator"></span></label>
+                          </div>
+                          <div class="col-auto">
+                            <label class="product-color"><input type="radio" name="color" value="silver"><span class="product-color__indicator"></span></label>
+                          </div>
+                          <div class="col-auto">
+                            <label class="product-color"><input type="radio" name="color" value="copper"><span class="product-color__indicator"></span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <form action="#" method="post">
-                    <input type="hidden" name="id" value="123">
-                    <input type="hidden" name="price" value="1000">
-                    <div class="product__details">
-                      <div class="row">
-                        <div class="col-auto">
-                          <div class="product__colors-holder">
-                            <div class="product__details-title">Цвет швов:</div>
-                            <div class="product__colors">
-                              <div class="row row--6px">
-                                <div class="col-auto">
-                                  <label class="product-color"><input type="radio" name="color" value="black" checked><span class="product-color__indicator"></span></label>
-                                </div>
-                                <div class="col-auto">
-                                  <label class="product-color"><input type="radio" name="color" value="silver"><span class="product-color__indicator"></span></label>
-                                </div>
-                                <div class="col-auto">
-                                  <label class="product-color"><input type="radio" name="color" value="copper"><span class="product-color__indicator"></span></label>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-auto">
-                          <div class="product__count-holder">
-                            <label class="product__details-title">Количество:</label>
-                            <div class="product__count">
-                              <div class="row row--6px">
-                                <div class="col-auto">
-                                  <input type="number" class="input" name="count" value="1" min="1" max="10">
-                                </div>
-                              </div>
-                            </div>
+                  <div class="col-auto">
+                    <div class="product__count-holder">
+                      <label class="product__details-title">Количество:</label>
+                      <div class="product__count">
+                        <div class="row row--6px">
+                          <div class="col-auto">
+                            <input type="number" class="input" name="count" value="1" min="1" max="10">
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="product__details">
-                      <div class="row">
-                        <div class="col-10">
-                          <div class="product__details-title">Примечание к заказу:</div>
-                          <textarea class="textarea" name="comment" /></textarea>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product__submit-holder">
-                      <div class="row">
-                        <div class="col-10">
-                          <button type="submit" class="button button--blue button">Добавить в корзину</button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-
-
+                  </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-12">
-                  <div class="product__details">
-                    <div class="title--h3 title--blue">Описание товара</div>
-                    <div class="product-details">
-                      <p>Флорариум капля с пятиугольным основанием изготовлен из стекла толщиной 2мм. На фото представлен вариант с черным цветом швов. </p>
-                      <p>Парамерты изделия:</p>
-                      <ul>
-                        <li>Высота изделия - 35см</li>
-                        <li>Ширина изделия - 15см</li>
-                        <li>Это изделие - одна из самых популарных форм для создания флорариума с сукулентами. Пример этого фрорариума с сукулентами можно посмотреть <a href="#">здесь</a> </li>
-                      </ul>
-                    </div>
+              <div class="product__details">
+                <div class="row">
+                  <div class="col-10">
+                    <div class="product__details-title">Примечание к заказу:</div>
+                    <textarea class="textarea" name="comment" /></textarea>
                   </div>
                 </div>
-                <div class="col-12">
-                  <div class="product__details">
-                    <div class="title--h3 title--blue">Фото товара</div>
-                    <div class="product-grid js-masonry">
-                      <div class="product-grid__item">
-                        <a class="product-grid__link" data-fancybox="gallery" href="/example/product/img1.jpg" >
-                          <img src="/example/product/img1.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="product-grid__item">
-                        <a class="product-grid__link" data-fancybox="gallery" href="/example/product/img2.jpg" >
-                          <img src="/example/product/img2.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="product-grid__item">
-                        <a class="product-grid__link" data-fancybox="gallery" href="/example/product/img3.jpg" >
-                          <img src="/example/product/img3.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="product-grid__item">
-                        <a class="product-grid__link" data-fancybox="gallery" href="/example/product/img4.jpg" >
-                          <img src="/example/product/img4.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="product-grid__item">
-                        <a class="product-grid__link" data-fancybox="gallery" href="/example/product/img5.jpg" >
-                          <img src="/example/product/img5.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="product-grid__item">
-                        <a class="product-grid__link" data-fancybox="gallery" href="/example/product/img6.jpg" >
-                          <img src="/example/product/img6.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="product-grid__item">
-                        <a class="product-grid__link" data-fancybox="gallery" href="/example/product/img7.jpg" >
-                          <img src="/example/product/img7.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="product-grid__item">
-                        <a class="product-grid__link" data-fancybox="gallery" href="/example/product/img8.jpg" >
-                          <img src="/example/product/img8.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="product-grid__item">
-                        <a class="product-grid__link" data-fancybox="gallery" href="/example/product/img9.jpg" >
-                          <img src="/example/product/img9.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="product-grid__item">
-                        <a class="product-grid__link" data-fancybox="gallery" href="/example/product/img10.jpg" >
-                          <img src="/example/product/img10.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="product-grid__item">
-                        <a class="product-grid__link" data-fancybox="gallery" href="/example/product/img11.jpg" >
-                          <img src="/example/product/img11.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="product-grid__item">
-                        <a class="product-grid__link" data-fancybox="gallery" href="/example/product/img12.jpg" >
-                          <img src="/example/product/img12.jpg" alt="">
-                        </a>
-                      </div>
-
-
-                    </div>
+              </div>
+              <div class="product__submit-holder">
+                <div class="row">
+                  <div class="col-10">
+                    <button type="submit" class="button button--blue button">Добавить в корзину</button>
                   </div>
                 </div>
+              </div>
+            </form>
+
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="product__details">
+              <div class="title--h3 title--blue">Описание товара</div>
+              <div class="product-details">
+                <p>Флорариум капля с пятиугольным основанием изготовлен из стекла толщиной 2мм. На фото представлен вариант с черным цветом швов. </p>
+                <p>Парамерты изделия:</p>
+                <ul>
+                  <li>Высота изделия - 35см</li>
+                  <li>Ширина изделия - 15см</li>
+                  <li>Это изделие - одна из самых популарных форм для создания флорариума с сукулентами. Пример этого фрорариума с сукулентами можно посмотреть <a href="#">здесь</a> </li>
+                </ul>
               </div>
             </div>
+          </div>
+          <div class="col-12">
+            <div class="product__details">
+              <div class="title--h3 title--blue">Фото товара</div>
+              <div class="product-gallery">
+                <div class="product-gallery__list">
+                  <div class="product-gallery__item">
+                    <a class="product-gallery__link" data-fancybox="gallery" href="/example/product/img1.jpg" >
+                      <div class="product-gallery__img-holder">
+                        <div class="product-gallery__img-inner">
+                          <picture class="product-gallery__pict">
+                            <source type="image/webp" srcset="/example/product/img1.webp" alt="">
+                            <img class="product-gallery__img" src="/example/product/img1.jpg" alt="">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="product-gallery__hover"></div>
+                    </a>
+                  </div>
+                  <div class="product-gallery__item">
+                    <a class="product-gallery__link" data-fancybox="gallery" href="/example/product/img2.jpg" >
+                      <div class="product-gallery__img-holder">
+                        <div class="product-gallery__img-inner">
+                          <img class="product-gallery__img" src="/example/product/img2.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="product-gallery__hover"></div>
+                    </a>
+                  </div>
+                  <div class="product-gallery__item">
+                    <a class="product-gallery__link" data-fancybox="gallery" href="/example/product/img3.jpg" >
+                      <div class="product-gallery__img-holder">
+                        <div class="product-gallery__img-inner">
+                          <!-- <img class="product-gallery__img" src="/example/product/img3.jpg" alt=""> -->
+                        </div>
+                      </div>
+                      <div class="product-gallery__hover"></div>
+                    </a>
+                  </div>
+                  <div class="product-gallery__item">
+                    <a class="product-gallery__link" data-fancybox="gallery" href="/example/product/img4.jpg" >
+                      <div class="product-gallery__img-holder">
+                        <div class="product-gallery__img-inner">
+                          <img class="product-gallery__img" src="/example/product/img4.jpg" alt="">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="product-gallery__item">
+                    <a class="product-gallery__link" data-fancybox="gallery" href="/example/product/img5.jpg" >
+                      <div class="product-gallery__img-holder">
+                        <div class="product-gallery__img-inner">
+                          <img class="product-gallery__img" src="/example/product/img5.jpg" alt="">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="product-gallery__item">
+                    <a class="product-gallery__link" data-fancybox="gallery" href="/example/product/img6.jpg" >
+                      <div class="product-gallery__img-holder">
+                        <div class="product-gallery__img-inner">
+                          <img class="product-gallery__img" src="/example/product/img6.jpg" alt="">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="product-gallery__item">
+                    <a class="product-gallery__link" data-fancybox="gallery" href="/example/product/img7.jpg" >
+                      <div class="product-gallery__img-holder">
+                        <div class="product-gallery__img-inner">
+                          <img class="product-gallery__img" src="/example/product/img7.jpg" alt="">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="product-gallery__item">
+                    <a class="product-gallery__link" data-fancybox="gallery" href="/example/product/img8.jpg" >
+                      <div class="product-gallery__img-holder">
+                        <div class="product-gallery__img-inner">
+                          <img class="product-gallery__img" src="/example/product/img8.jpg" alt="">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="product-gallery__item">
+                    <a class="product-gallery__link" data-fancybox="gallery" href="/example/product/img9.jpg" >
+                      <div class="product-gallery__img-holder">
+                        <div class="product-gallery__img-inner">
+                          <img class="product-gallery__img" src="/example/product/img9.jpg" alt="">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="product-gallery__item">
+                    <a class="product-gallery__link" data-fancybox="gallery" href="/example/product/img10.jpg" >
+                      <div class="product-gallery__img-holder">
+                        <div class="product-gallery__img-inner">
+                          <img class="product-gallery__img" src="/example/product/img10.jpg" alt="">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="product-gallery__item">
+                    <a class="product-gallery__link" data-fancybox="gallery" href="/example/product/img11.jpg" >
+                      <div class="product-gallery__img-holder">
+                        <div class="product-gallery__img-inner">
+                          <img class="product-gallery__img" src="/example/product/img11.jpg" alt="">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="product-gallery__item">
+                    <a class="product-gallery__link" data-fancybox="gallery" href="/example/product/img12.jpg" >
+                      <div class="product-gallery__img-holder">
+                        <div class="product-gallery__img-inner">
+                          <img class="product-gallery__img" src="/example/product/img12.jpg" alt="">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
 
-          </main>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- /Левая колонка -->
       </div>
-      </main> <!-- /.main-content -->
-    </div>
-  </div> <!-- / .section__main-content -->
-
+      <!-- Уникальный контент страницы -->
+    </main><!-- /.main-content -->
+  </div>
 </section>

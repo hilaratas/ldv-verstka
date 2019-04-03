@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    @@include('./html_include/head.html', { "title" : "Блоки" })
+    @@include('./html_include/head.html', { "title" : "Каталог" })
 </head>
 <body class="page">
 
@@ -14,7 +14,9 @@
         </div>
 
         <div class="page__middle">
-          @@include('./html_include/blocks.html')
+          <div class="page__middle-inner">
+            @@include('./html_include/catalog.html')
+          </div>
         </div>
 
         <div class="page__footer">
@@ -26,6 +28,7 @@
     </div>
 
     @@include('./html_include/popups.html')
+
     @@include('./html_include/scripts.html')
 
     <!-- Эта часть только для локальной разработки. Начало. -->
@@ -34,6 +37,5 @@
     @@include('./html_include/link-panel-local-build-only.html')
     <!-- Эта часть только для локальной разработки. Конец. -->
     <!-- Не копировать на боевой сайт -->
-
 </body>
 </html>

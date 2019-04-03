@@ -1,9 +1,9 @@
 export default function () {
     var $mainSider =  $('#js-main-slider');
-    var $sliders = $('.js-slider');
+    var $ps = $('.js-popular-slider');
 
     $mainSider.slick();
-    $sliders.slick({
+    $ps.slick({
       "slidesToShow": 4,
       "slidesToScroll": 2,
       "arrows" : false,

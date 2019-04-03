@@ -1,71 +1,87 @@
 .services {
-    &__header {
-      @include h1();
-      text-align: center;
-      display: flex;
-      align-items: center;
-      margin-top: 1em;
-      margin-bottom: 1em;
+  &__header {
+    @include h1();
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
 
-      &:before, &:after {
-        content: '';
-        flex-grow: 1;
-        flex-basis: auto;
-        height: 2px;
-        background: $color-brand-1;
-        margin-right: 40px;
-        margin-left: 40px;
-      }
-    }
-
-    &__inner {
-      padding-left: 40px;
-      padding-right: 40px;
-      @media #{$media-small-phone} {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-    }
-
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      padding-left: 0;
-      padding-right: 0;
-      margin: 0;
-    }
-
-    &__item {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-
-    &__img-holder {
-      width:100%;
-      padding-top: 100%;
-      position: relative;
-    }
-
-    &__img {
-      position: absolute;
-      top:0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    &__text-holder {
-      width: 100%;
-      background: $blue-brand-1;
-      padding: 20px;
-      color: #fff;
+    &:before, &:after {
+      content: '';
       flex-grow: 1;
+      flex-basis: auto;
+      height: 2px;
+      background: $color-brand-1;
+      margin-right: 40px;
+      margin-left: 40px;
     }
+  }
 
-    &__text {
-      color: #fff;
+  &__inner {
+    padding-left: 40px;
+    padding-right: 40px;
+    @media #{$media-small-phone} {
+      padding-left: 20px;
+      padding-right: 20px;
     }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  &__img-holder {
+    width:100%;
+    padding-top: 100%;
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__text-holder {
+    width: 100%;
+    background: $blue-brand-1;
+    padding: 20px;
+    color: #fff;
+    flex-grow: 1;
+    transition: all 0.3s;
+  }
+
+  &__text {
+    color: #fff;
+  }
+
+  &__zz {
+    >*:nth-child(2n) {
+      .services__text-holder {
+        background: $grey-brand-1;
+      }
+    }
+  }
+
+  &__item:hover {
+    .services__text-holder {
+      background: $color-brand-2;
+    }
+  }
 }

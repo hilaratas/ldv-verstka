@@ -54,6 +54,7 @@ const config = {
     imgSprite: 'src/media/img-stoge/*.png',
     imgDesign: 'src/media/**/*.{png,jpg,gif}',
     imgExample: 'src/example/**/*.{png,jpg,gif}',
+    webpExample: 'src/example/**/*.webp',
     iconfont: 'src/fonts/iconfont-store/*.svg',
     fonts: 'src/fonts/**/*.*',
   },
@@ -72,6 +73,7 @@ const config = {
     imgSpriteCss: 'build/css/',
     imgDesign: 'build/media/',
     imgExample: 'build/example/',
+    webpExample: 'build/example/',
     iconfont: 'build/fonts/',
     fonts: 'build/fonts/'
   },
@@ -189,6 +191,11 @@ gulp.task('imgExample', function() {
     .pipe(imagemin(imageminCfg)).pipe(gulp.dest(config.build.imgExample));
 });
 
+gulp.task('webpExample', function() {
+  return gulp.src(config.src.webpExample).pipe(plumber())
+    .pipe(gulp.dest(config.build.webpExample));
+});
+
 gulp.task('iconFonts', function(){
   return gulp.src(config.src.iconfont)
     .pipe(iconfontCss({
@@ -218,7 +225,7 @@ function reload(done) {
 }
 
 gulp.task('watch', function(){
-  gulp.watch(config.watch.html, gulp.series('html'));
+  gulp.watch(config.watch.html, gulp.series('html', reload));
   gulp.watch(config.watch.jsPlugins, gulp.series('jsPlugins', reload));
   gulp.watch(config.watch.jsVendors, gulp.series('jsVendors', reload));
   gulp.watch(config.watch.jsCustom, gulp.series('jsCustom', reload));
@@ -227,6 +234,7 @@ gulp.task('watch', function(){
   gulp.watch(config.src.svgExample, gulp.series('svgExample', reload));
   gulp.watch(config.src.imgDesign, gulp.series('imgDesign', reload));
   gulp.watch(config.src.imgExample, gulp.series('imgExample', reload));
+  gulp.watch(config.src.webpExample, gulp.series('webpExample', reload));
   gulp.watch(config.watch.cssCopy, gulp.series('cssCopy', reload));
   gulp.watch(config.watch.cssCustom, gulp.series('cssCustom', reload));
 });
@@ -236,7 +244,7 @@ build = gulp.series('del',
   'cssCopy', 'cssCustom',
   'jsPlugins', 'jsVendors', 'jsCustom',
   'svgSprite', 'svgDesign', 'svgExample',
-  'imgDesign', 'imgExample',
+  'imgDesign', 'imgExample', 'webpExample',
   'fonts');
 
 gulp.task('default', build);
