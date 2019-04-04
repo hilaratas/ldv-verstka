@@ -13,9 +13,9 @@ import mask from './components/mask';
 import svg4everybody from './components/svg4everybody';
 import pageReload from './components/page-reload';
 import payTabs from './components/pay-tabs';
-import svgStore from './components/svg-store';
+//import svgStore from './components/svg-store';
 import aos from './components/aos';
-import masonry from './components/masonry';
+//import masonry from './components/masonry';
 
 
 $(function(){
@@ -39,9 +39,9 @@ $(function(){
 	svg4everybody();
 	pageReload();
 	payTabs();
-	svgStore();
+	//svgStore();
   aos();
-  masonry();
+  //masonry();
 });
 
 

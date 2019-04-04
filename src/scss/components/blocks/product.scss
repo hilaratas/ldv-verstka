@@ -1,15 +1,26 @@
 .product {
   &__price-holder {
-    margin-top: 10px;
+    @media #{$media-not-small-phone} {
+      margin-top: -7px;
+    }
+    @media #{$media-small-phone} {
+      margin-top: -13px;
+    }
   }
   &__price {
     color: #000;
     font-size: 1.5rem;
+    line-height: 1;
     font-weight: bold;
     font-stretch: condensed;
   }
   &__details {
     margin-top: 15px;
+    &--not-small-phone-mt0 {
+      @media #{$media-not-small-phone} {
+        margin-top: 0;
+      }
+    }
   }
   &__details-title {
     margin-bottom: 10px;
