@@ -43,7 +43,8 @@
   @media #{$media-phone} {
     background: #fff;
     height: 60px;
-    position: relative;
+    width: 100%;
+    position: fixed;
     z-index: $z-i-header;
 
     &__inner {

@@ -1,70 +1,23 @@
 html {
-  overflow: hidden;
+  .is-not-mobile & {
+    @include scrollbar();
+  }
+  &.is-main-menu-open {
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: auto;
+  }
 }
 .page {
   background-color: $page-bg;
   height: 100%;
   width: 100%;
-  padding: 0;
+  //padding: 0;
   margin: 0;
-  overflow: hidden;
+  //overflow: hidden;
 
   &__wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      z-index: 1;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-
-      .is-not-mobile & {
-        &::-webkit-scrollbar {
-          width: 16px;
-          background-color: #dbd8d4;
-          @media #{$media-hd-desk} {
-            background-color: #F5F5F5;
-          }
-
-          &-thumb {
-            border-radius: 7px;
-            box-shadow: inset 0 0 6px rgba(0,0,0,.1);
-            background-color: rgba(red($blue-brand-1), green($blue-brand-1), blue($blue-brand-1), 0.3);
-          }
-          &-track {
-            border-radius: 5px;
-            box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
-          }
-        }
-      }
-
-      .is-mobile & {
-        // &::-webkit-scrollbar {
-        //   width: 16px;
-        //   background-color: #dbd8d4;
-        //   @media #{$media-hd-desk} {
-        //     background-color: #F5F5F5;
-        //   }
-
-        //   &-thumb {
-        //     border-radius: 7px;
-        //     box-shadow: inset 0 0 6px rgba(0,0,0,.1);
-        //     background-color: rgba(red($blue-brand-1), green($blue-brand-1), blue($blue-brand-1), 0.3);
-        //   }
-        //   &-track {
-        //     border-radius: 5px;
-        //     box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
-        //   }
-        // }
-      }
-
-      .is-main-menu-open & {
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: auto;
-      }
-
-
+    height: 100%;
+    position: relative;
   }
 
   &__inner {
@@ -94,6 +47,10 @@ html {
   &__header {
       height: 1px;
       display: table-row;
+
+      @media #{$media-phone} {
+        height: 60px;
+      }
   }
 
   &__middle {
