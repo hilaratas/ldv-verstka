@@ -6,7 +6,7 @@ function SideNav(el) {
   var openEl = document.getElementById('js-main-menu-toggle');
   var pageContEl = document.querySelector('.page__content');
   var htmlEl = document.documentElement;
-  var sideContEl = document.querySelector('.main-menu__content');
+  var sideContEl = document.querySelector('.sidebar__content');
 
   var startPosition = 0,
         currentPosition = 0,

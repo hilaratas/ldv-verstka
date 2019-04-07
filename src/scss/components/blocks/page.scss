@@ -1,5 +1,5 @@
 html {
-  .is-not-mobile & {
+  &.is-not-mobile {
     @include scrollbar();
   }
   &.is-main-menu-open {

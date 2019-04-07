@@ -1,86 +1,18 @@
 .main-menu {
-	  position: fixed;
-    pointer-events: none;
-    height: calc(100%);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-    z-index: $z-i-main-menu;
-    padding: 0;
+  &__list {
     margin: 0;
-
-    .is-main-menu-open & {
-    	transform: translate(0px);
-      pointer-events: auto;
-      background: rgba(0, 0, 0, 0.3);
-    }
-
-    &__content {
-      transform: translateX(-100%);
-      transition: transform 0.3s;
-      top: 0;
-      height: 100%;
-      width: 500px;
-      background: #fff;
-      position: relative;
-      border-right: 1px solid $main-menu-border-color;
-
-      @media #{$media-phone} {
-        width: 300px;
-      }
-
-      .is-main-menu-open & {
-        transform: translateX(0);
-      }
-    }
-
-	&__inner {
-		position: absolute;
-    top: 0;
-		bottom: 0;
-		width: 100%;
-		overflow-x: hidden;
-		overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-		background: #fff;
-
-    @media #{$media-phone} {
-      top: 60px;
-      bottom: 0;
-    }
-
-    @media #{$media-not-phone} {
-      top: 0px;
-      bottom: 60px;
-    }
-	}
-
-  &__nav {
-    display: table;
+    padding: 0;
     width: 100%;
-    height: 100%;
+    flex-basis: 100%;
   }
-
-	&__list {
-		display: table-cell;
-    vertical-align: middle;
-		padding-right: 40px;
-
-    @media #{$media-phone} {
-      padding-left: 40px;
-    }
-    @media #{$media-not-phone} {
-      padding-left: calc(40px + #{$header-width});
-    }
-	}
-
+  &__list .main-menu__list {
+    padding-left: 30px;
+  }
 	&__item {
 		display: flex;
 		width: 100%;
+    flex-wrap: wrap;
 	}
-
 	&__link {
     font-size: 1.2rem;
 		flex-basis: auto;
@@ -91,7 +23,6 @@
     background: transparent;
     position: relative;
     color: $color-brand-1;
-
     &:after {
       content: '';
       position: absolute;
@@ -102,15 +33,12 @@
       background: #CBA6A7;
       transition: all 0.2s ease 0s;
     }
-
 		.is-not-mobile & {
 			&:hover:after {
 				width: 100%;
 			}
 		}
-
 	}
-
 	&__arrow-holder {
     display: inline-block;
     display: none;
@@ -121,7 +49,6 @@
 		width: calc(16px * 1.5 + 1rem);
 		border-left: 1px solid $main-menu-border-color;
 	}
-
 	&__arrow {
 		display: inline-block;
 		padding: 0.5rem;
