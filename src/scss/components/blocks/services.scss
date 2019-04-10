@@ -47,8 +47,16 @@
     width:100%;
     padding-top: 100%;
     position: relative;
+    background: $grey-brand-3;
+    overflow: hidden;
   }
-
+  &__img-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
   &__img {
     position: absolute;
     top:0;
