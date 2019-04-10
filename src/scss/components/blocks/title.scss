@@ -40,6 +40,10 @@
 		@include h6();
 	}
 
+  &.is-hidden {
+    display: none;
+  }
+
   &--pretty {
     text-align: center;
     display: flex;
