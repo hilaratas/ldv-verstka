@@ -15,6 +15,7 @@ import pageReload from './components/page-reload';
 import payTabs from './components/pay-tabs';
 //import svgStore from './components/svg-store';
 import aos from './components/aos';
+import mainHeader from './components/main-header';
 //import masonry from './components/masonry';
 
 
@@ -27,6 +28,7 @@ $(function(){
 	};
 
 	sliders();
+  mainHeader();
 	gumburger();
 	popups();
 	validate();
