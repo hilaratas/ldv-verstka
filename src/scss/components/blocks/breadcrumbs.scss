@@ -18,7 +18,15 @@
         padding-right: 10px;
       }
     }
+    &--here {
+      white-space: nowrap;
+      &:after {
+        content: '' !important;
+        padding-left: 0 !important;
+      }
+    }
   }
+
   &__link {
     color: #000;
   }
