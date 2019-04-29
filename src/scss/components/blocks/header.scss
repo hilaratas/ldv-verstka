@@ -48,23 +48,30 @@
     z-index: $z-i-header;
 
     &__inner {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: #fff;
-      height: 60px;
-      z-index: 50;
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // right: 0;
+      // background: #fff;
+      // height: 60px;
+      // z-index: 50;
+      display: flex;
+      width: 100%;
       border-bottom: 1px solid $grey-brand-3;
     }
     .is-main-menu-open &__inner {
       position: fixed;
     }
     &__middle {
+      flex: 1 0 auto;
+    }
+    &__middle-inner {
       display: none;
     }
     &__bottom {
-      display: none;
+      width: 60px;
+      height: 60px;
+      flex: 0 0 auto;
     }
   }
 }

@@ -56,6 +56,9 @@
     left: 0;
     bottom: 0;
     right: 0;
+    &--white {
+      background: #fff;
+    }
   }
   &__img {
     position: absolute;
@@ -64,6 +67,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    &--contain {
+      object-fit: contain;
+    }
   }
 
   &__text-holder {
@@ -73,6 +79,9 @@
     color: #fff;
     flex-grow: 1;
     transition: all 0.3s;
+    &--action {
+      background: #CE000C;
+    }
   }
 
   &__text {
@@ -90,6 +99,9 @@
   &__item:hover {
     .services__text-holder {
       background: $color-brand-2;
+    }
+    .services__text-holder--action {
+      background: darken(#CE000C, 10%);
     }
   }
 }
