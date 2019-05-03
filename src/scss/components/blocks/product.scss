@@ -28,4 +28,34 @@
   &__submit-holder {
     margin-top: 18px;
   }
+  &__img-holder {
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    background: #d6d6d6;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border: 1px solid #d6d6d6;
+      z-index: 1;
+    }
+  }
+  &__img-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

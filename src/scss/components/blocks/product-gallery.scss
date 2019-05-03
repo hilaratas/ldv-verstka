@@ -32,7 +32,7 @@
     overflow: hidden;
     background: #d6d6d6;
     &:before {
-      fill-change: transform;
+      will-change: transform;
       content: '';
       position: absolute;
       top: 50%;
