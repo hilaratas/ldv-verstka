@@ -21,21 +21,36 @@
             <h1 class="title title--h2 title--onl title--blue">Флорариум капля с пятиугольным основанием</h1>
           </div>
           <div class="col-12 col-sm-5 col-xl-4">
-            <div class="product__img-holder">
-              <div class="product__img-inner">
-                <picture class="product__pict">
-                  <!-- <source type="image/webp" srcset="/example/katalog/5kaplya.webp" alt=""> -->
-                  <img class="product__img" src="/example/katalog/5kaplya.jpg" alt="Флорариум капля с пятиугольным основанием">
-                </picture>
+            <div class="product__left">
+              <div class="product__img-holder">
+                <div class="product__img-inner">
+                  <picture class="product__pict">
+                    <!-- <source type="image/webp" srcset="/example/katalog/5kaplya.webp" alt=""> -->
+                    <img class="product__img" src="/example/katalog/5kaplya.jpg" alt="Флорариум капля с пятиугольным основанием">
+                  </picture>
+                </div>
+              </div>
+              <div class="product__label-holder">
+                <div class="product__label is-sale">Sale</div>
+                <div class="product__label is-for-order">Под заказ</div>
               </div>
             </div>
+
           </div>
           <div class="col-12 col-sm-7 col-xl-8">
             <div class="product__details product__details--not-small-phone-mt0">
               <div class="title--h3 title--blue title--not-small-phone-hidden">Информация о товаре</div>
               <div class="product__price-holder">
                 <div class="product__details-title">Цена:</div>
-                <div class="product__price">1000 р.</div>
+                <div class="row align-items-end">
+                  <div class="col-auto">
+                    <div class="product__price">2000 P</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="product__old-price">2500 P</div>
+                  </div>
+                </div>
+
               </div>
             </div>
 
@@ -50,13 +65,13 @@
                       <div class="product__colors">
                         <div class="row row--6px">
                           <div class="col-auto">
-                            <label class="product-color"><input type="radio" name="color" value="black" checked><span class="product-color__indicator"></span></label>
+                            <label class="product-color"><input type="radio" name="color" value="1" checked><span class="radio_attr_label">Черный</span></label>
                           </div>
                           <div class="col-auto">
-                            <label class="product-color"><input type="radio" name="color" value="silver"><span class="product-color__indicator"></span></label>
+                            <label class="product-color"><input type="radio" name="color" value="2"><span class="radio_attr_label">Серебрянный</span></label>
                           </div>
                           <div class="col-auto">
-                            <label class="product-color"><input type="radio" name="color" value="copper"><span class="product-color__indicator"></span></label>
+                            <label class="product-color"><input type="radio" name="color" value="3"><span class="radio_attr_label">Медный</span></label>
                           </div>
                         </div>
                       </div>
@@ -81,6 +96,9 @@
                   <div class="col-10">
                     <div class="product__details-title">Примечание к заказу:</div>
                     <textarea class="textarea" name="comment" /></textarea>
+                    <div class="product__note">
+                      Тут можно добавить пожелания к заказу, вопрос или другую необходимую информацию
+                    </div>
                   </div>
                 </div>
               </div>

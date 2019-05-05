@@ -7,6 +7,14 @@
     font-size: 12px;
     line-height: 1;
     border: none;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    transition: all 0.2s;
+    &:hover {
+      background: darken(#92C57A, 10%);
+    }
     &:focus {
       outline: none;
     }

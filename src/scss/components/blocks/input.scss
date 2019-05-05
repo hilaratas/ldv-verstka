@@ -78,6 +78,19 @@
        text-overflow: clip;
     }
 
+    &[type='number'] {
+      -moz-appearance:textfield;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    &--quantity {
+      max-width: 200px;
+    }
+
     &--small {
         font-size: $form-el-small-font-size;
         line-height: $form-el-small-line-height;
