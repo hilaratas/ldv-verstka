@@ -1,0 +1,39 @@
+.cart-table {
+  display: table;
+  width: 100%;
+  //table-layout: fixed;
+  border-collapse: collapse;
+  & > &__row, & > tbody > &__row {
+    display: table-row;
+    & > .cart-table__cell {
+      display: table-cell;
+      border: 1px solid #B5B7B8;
+      padding: 7px;
+      vertical-align: middle;
+      &--text-right {
+        text-align: right;
+      }
+      &.is-header {
+        font-weight: bold;
+        font-size: 14px;
+      }
+      &.is-delete {
+        width: 75px;
+        text-align: center;
+      }
+    }
+  }
+  &__picture-holder {
+    width: 150px;
+    max-width: 100%;
+  }
+  &__update-holder {
+    margin-top: 10px;
+    text-align: center;
+  }
+  &__sum-holder {
+    line-height: $form-el-height;
+    display: inline-block;
+    white-space: nowrap;
+  }
+}

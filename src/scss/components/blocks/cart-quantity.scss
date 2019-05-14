@@ -1,0 +1,22 @@
+.cart-quantity {
+  display: flex;
+  width: auto;
+  &__minus, &__plus {
+    height: $form-el-height;
+    border: 1px solid $button-border-hover;
+    background: $button-bg-hover;
+    color: #fff;
+    padding: 0 5px;
+    transition: all 0.2s;
+    &:hover {
+      border: 1px solid darken($button-border-hover, 20%);
+      background: darken($button-border-hover, 10%);
+    }
+    &:focus {
+      outline: none;
+    }
+    &:disabled {
+      background: lighten($button-border-hover, 20%);
+    }
+  }
+}

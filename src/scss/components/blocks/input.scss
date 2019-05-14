@@ -91,6 +91,11 @@
       max-width: 200px;
     }
 
+    &--cart-quantity {
+      width: 50px;
+      text-align: center;
+    }
+
     &--small {
         font-size: $form-el-small-font-size;
         line-height: $form-el-small-line-height;
