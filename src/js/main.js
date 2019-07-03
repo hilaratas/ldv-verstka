@@ -9,16 +9,14 @@ import mainMenu from './components/main-menu';
 import tabsComp from './components/tabs';
 import tabsSelectComp from './components/tabs-select';
 
-import mask from './components/mask';
+import mask from './components/js-mask';
 import svg4everybody from './components/svg4everybody';
-import pageReload from './components/page-reload';
-import payTabs from './components/pay-tabs';
 //import svgStore from './components/svg-store';
 import aos from './components/aos';
-import mainHeader from './components/main-header';
+import mainHeader from './components/js-main-header';
 import jsCartItem from './components/js-cart-item';
 import jsCartAddr from './components/js-cart-addr';
-//import masonry from './components/masonry';
+
 
 
 $(function(){
@@ -41,8 +39,6 @@ $(function(){
 	tabsSelectComp();
 	mask();
 	svg4everybody();
-	pageReload();
-	payTabs();
 	//svgStore();
   aos();
   jsCartItem();
