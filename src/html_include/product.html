@@ -25,7 +25,11 @@
               <div class="product__img-holder">
                 <div class="product__img-inner">
                   <picture class="product__pict">
-                    <!-- <source type="image/webp" srcset="/example/katalog/5kaplya.webp" alt=""> -->
+                    <source srcset="/example/katalog/5kaplya.jpg 1x, /example/katalog/full_5kaplya.jpg 2x" media="(min-width: 1366px)">
+                    <source srcset="/example/katalog/5kaplya.jpg 1x, /example/katalog/full_5kaplya.jpg 2x" media="(min-width: 1025px)">
+                    <source srcset="/example/katalog/trumb_5kaplya.jpg 1x, /example/katalog/5kaplya.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="/example/katalog/trumb_5kaplya.jpg 1x, /example/katalog/5kaplya.jpg 2x" media="(min-width: 576px)">
+                      <source srcset="/example/katalog/5kaplya.jpg 1x, /example/katalog/full_5kaplya.jpg 2x" media="(max-width: 575px)">
                     <img class="product__img" src="/example/katalog/5kaplya.jpg" alt="Флорариум капля с пятиугольным основанием">
                   </picture>
                 </div>
@@ -140,8 +144,12 @@
                   <div class="product-gallery__img-holder">
                     <div class="product-gallery__img-inner">
                       <picture class="product-gallery__pict">
-                        <source type="image/webp" srcset="/example/product/img1.webp" alt="">
-                        <img class="product-gallery__img" src="/example/product/img1.jpg" alt="">
+                        <source srcset="/example/product/trumb_img1.jpg 1x, /example/product/img1.jpg 2x" media="(min-width: 1366px)">
+                        <source srcset="/example/product/trumb_img1.jpg 1x, /example/product/img1.jpg 2x" media="(min-width: 1025px)">
+                        <source srcset="/example/product/trumb_img1.jpg 1x, /example/product/img1.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="/example/product/trumb_img1.jpg" media="(min-width: 576px)">
+                        <source srcset="/example/product/trumb_img1.jpg 1x, /example/product/img1.jpg 2x" media="(max-width: 575px)">
+                        <img class="product-gallery__img" src="/example/product/trumb_img1.jpg" alt="">
                       </picture>
                     </div>
                   </div>
