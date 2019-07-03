@@ -1,0 +1,15 @@
+.cart-attrs {
+  &__list {
+    list-style-type: none;
+    font-size: 14px;
+    padding-left: 20px;
+    margin: 0;
+  }
+  &__item {
+    list-style-type: none;
+    margin-bottom: 5px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

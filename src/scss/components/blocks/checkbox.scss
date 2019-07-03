@@ -29,7 +29,7 @@
             top: 3px;
             left: 5px;
             transform: rotate(-45deg);
-            border-radius: 2px; 
+            border-radius: 2px;
             display: block;
             background: transparent;
             transition: all $transition-duration;
@@ -40,13 +40,13 @@
          &:before {
             border-left-color: $checkbox-color;
             border-bottom-color: $checkbox-color;
-         } 
+         }
       }
 
       &:disabled + .checkbox__indicator {
-         background: lighten($checkbox-color-border, 5%);
+         background: lighten($radio-color-border, 55%);
       }
-      
+
    }
 
    & + label {

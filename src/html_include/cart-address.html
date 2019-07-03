@@ -21,10 +21,112 @@
           <li class="cart-adr-menu__item is-active"><span class="cart-adr-menu__link">Адрес</span></li>
           <li class="cart-adr-menu__item"><a class="cart-adr-menu__link" href="#">Способ оплаты</a></li>
           <li class="cart-adr-menu__item"><span class="cart-adr-menu__link">Способ доставки</span></li>
-          <li class="cart-adr-menu__item"><span class="cart-adr-menu__link">Подтвердить заказ
-</span></li>
+          <li class="cart-adr-menu__item"><span class="cart-adr-menu__link">Подтвердить заказ</span></li>
         </ul>
       </div>
+
+      <form action="/ldv_s1/catalog/checkout/step2save" method="post" name="loginForm" class="form js-form-validate js-cart-addr" autocomplete="off" enctype="multipart/form-data">
+        <div class="mt-4">
+          <table class="cart-addr">
+            <tr class="cart-addr__row">
+              <td class="cart-addr__cell cart-addr__cell--label-holder" colspan="1">
+
+                <div class="cart-addr__label-inner">
+                  <label for="control123456" class="cart-addr__label">Пол *</label> :
+                </div>
+
+              </td>
+              <td class="cart-addr__cell cart-addr__cell--control-holder" colspan="2">
+                <div class="cart-addr__control-holder js-form-validate__elem-holder">
+                  <div class="select">
+                    <select class="select__select select__select--medium" name="gender" id="control123456" required>
+                      <option value="0" disabled="disabled" selected="selected">Выберите</option>
+                      <option value="1">Муж.</option>
+                      <option value="2">Жен.</option>
+                    </select>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="cart-addr__row">
+              <td class="cart-addr__cell cart-addr__cell--label-holder">
+                 <div class="cart-addr__label-inner"><label for="control123457" class="cart-addr__label">Имя *</label> :</div>
+              </td>
+              <td class="cart-addr__cell cart-addr__cell--controll-holder" colspan="2">
+                <div class="cart-addr__control-holder js-form-validate__elem-holder">
+                  <input type="text" class="input" id="control123457" required>
+                </div>
+              </td>
+            </tr>
+            <tr class="cart-addr__row">
+              <td class="cart-addr__cell cart-addr__cell--label-holder">
+                 <div class="cart-addr__label-inner"><label for="control123458" class="cart-addr__label">Фирма</label> :</div>
+              </td>
+              <td class="cart-addr__cell cart-addr__cell--controll-holder" colspan="2">
+                <div class="cart-addr__control-holder">
+                  <input type="text" class="input" id="control123458">
+                </div>
+              </td>
+            </tr>
+            <tr class="cart-addr__row">
+              <td class="cart-addr__cell cart-addr__cell--label-holder">
+                 <div class="cart-addr__label-inner"><label for="control123459" class="cart-addr__label">Телефон *</label> :</div>
+              </td>
+              <td class="cart-addr__cell cart-addr__cell--controll-holder" colspan="2">
+                <div class="cart-addr__control-holder js-form-validate__elem-holder">
+                  <input type="text" class="input js-mask-tel" name="tel" id="control123459" required>
+                </div>
+              </td>
+            </tr>
+            <tr class="cart-addr__row">
+              <td class="cart-addr__cell cart-addr__cell--label-holder" colspan="2">
+                 <div class="cart-addr__label-inner pt-0"><label for="control1234510" class="cart-addr__label">Адрес доставки другой*</label> :</div>
+              </td>
+              <td class="cart-addr__cell cart-addr__cell--control-holder">
+                <div class="cart-addr__control-holder">
+                  <div class="row">
+                    <div class="col-auto">
+                      <label class="radio"><input type="radio" name="delivery_adress" class="js-cart-addr__toggle is-for-hide" value="0" checked="checked" id="control1234510" ><span class="radio__indicator"></span></label>
+                      <label for="control1234510">Нет</label>
+                    </div>
+                    <div class="col-auto">
+                      <label class="radio"><input type="radio" name="delivery_adress" class="js-cart-addr__toggle is-for-show"  value="1" id="control1234511"><span class="radio__indicator"></span></label>
+                      <label for="control1234511">Да</label>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <div class="js-cart-addr__add-addr is-hidden">
+            <table class="cart-addr">
+              <tr class="cart-addr__row">
+                <td class="cart-addr__cell cart-addr__cell--label-holder">
+                   <div class="cart-addr__label-inner"><label for="control1234512" class="cart-addr__label">Имя *</label> :</div>
+                </td>
+                <td class="cart-addr__cell cart-addr__cell--controll-holder" colspan="2">
+                  <div class="cart-addr__control-holder js-form-validate__elem-holder">
+                    <input type="text" class="input" name="d_f_name" id="control1234512" disabled="disabled" required>
+                  </div>
+                </td>
+              </tr>
+              <tr class="cart-addr__row">
+                <td class="cart-addr__cell cart-addr__cell--label-holder">
+                   <div class="cart-addr__label-inner"><label for="control1234513" class="cart-addr__label">Телефон *</label> :</div>
+                </td>
+                <td class="cart-addr__cell cart-addr__cell--controll-holder" colspan="2">
+                  <div class="cart-addr__control-holder js-form-validate__elem-holder">
+                    <input type="text" class="input js-mask-tel" name="d_phone" id="control1234513" disabled="disabled" required />
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="mt-4">
+          <button class="button">Далее</button>
+        </div>
+      </form>
       <!-- Уникальный контент страницы -->
     </main><!-- /.main-content -->
   </div>

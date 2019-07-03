@@ -17,6 +17,7 @@ import payTabs from './components/pay-tabs';
 import aos from './components/aos';
 import mainHeader from './components/main-header';
 import jsCartItem from './components/js-cart-item';
+import jsCartAddr from './components/js-cart-addr';
 //import masonry from './components/masonry';
 
 
@@ -45,6 +46,7 @@ $(function(){
 	//svgStore();
   aos();
   jsCartItem();
+  jsCartAddr();
 });
 
 

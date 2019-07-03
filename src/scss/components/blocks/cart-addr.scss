@@ -1,0 +1,27 @@
+.cart-addr {
+  width: 100%;
+  border-collapse: collapse;
+  &__cell {
+    padding: 0;
+    &--label-holder {
+      padding-right: 20px;
+      width: 26px;
+      vertical-align: top;
+    }
+    &--control-holder {
+      width: 100%;
+    }
+  }
+  &__label {
+    display: inline-block;
+  }
+  &__label-inner {
+    white-space: nowrap;
+    min-height: $form-el-height;
+    padding-top: calc( #{$form-el-padding-vert} + #{$form-el-border} );
+  }
+  &__control-holder {
+    margin-bottom: 20px;
+    position: relative;
+  }
+}

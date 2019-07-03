@@ -1,0 +1,13 @@
+.form-error {
+  position: absolute;
+  top: 100%;
+  margin-top: 1px;
+  font-size: 11px;
+  line-height: $line-height-base;
+  color: $brand-warning;
+  animation-name: error;
+  animation-duration: 350ms;
+  left: auto !important;
+  display: block;
+  top: auto;
+}

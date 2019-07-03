@@ -41,7 +41,7 @@
       }
 
       &:disabled + .radio__indicator {
-         background: lighten($radio-color-border, 5%);
+         background: lighten($radio-color-border, 55%);
       }
 
 	}

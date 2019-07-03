@@ -36,7 +36,7 @@
         }
     }
 
-    &.error {
+    &.is-error {
         border-color: $brand-warning;
 
         &:focus {
@@ -44,7 +44,7 @@
         }
     }
 
-    &.valid {
+    &.is-valid {
         border-color: $input-color-border-valid;
     }
 

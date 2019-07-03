@@ -1,0 +1,10 @@
+.link{
+  text-decoration: underline;
+  color: $blue-brand-1;
+  &--success {
+    color: $green-brand-1;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
