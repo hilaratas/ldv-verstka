@@ -1,4 +1,5 @@
 import 'nodelist-foreach-polyfill';
+import 'promise-polyfill/src/polyfill';
 import isMobile from './components/is-mobile';
 import sliders from './components/sliders';
 import gumburger from './components/gumburger';
@@ -13,6 +14,7 @@ import aos from './components/aos';
 import mainHeader from './components/js-main-header';
 import jsCartItem from './components/js-cart-item';
 import jsCartAddr from './components/js-cart-addr';
+import jsImgLoading from './components/js-img-loading';
 
 $(function(){
 	let htmlEl = document.documentElement;
@@ -35,6 +37,7 @@ $(function(){
   aos();
   jsCartItem();
   jsCartAddr();
+  jsImgLoading();
 });
 
 
