@@ -21,65 +21,43 @@ export default function () {
     tel: 'Введите телефон в формате +7 (012) 345-67-89',
     cyrillic: 'Введите русские буквы, дефис или пробел',
     passport: 'Введите данные в формате 22 00 123456',
-    lc: 'Введите лицевой счет в формате 123456789',
     accept: 'Выберите файл с разрешенным расширением',
-    "digits-and-cyr-chars" : 'Введите цифры или русские буквы',
     size: "Превышен допустимый размер файлов",
     oneSize: 'Превышен допустимый размер одного из файлов',
-    maxCountFiles : 'Разрешается прикрепиь не больше {0} файлов',
+    maxCountFiles : 'Разрешается прикрепить не больше {0} файлов',
     city: 'Город не найден. Выберите город из выпадающего списка.',
     street: 'Улица не найдена. Выберите улицу из выпадающего списка.',
     house: 'Дом не найден. Выберите дом из выпадающего списка.'
   });
 
 	$.validator.setDefaults({
-	    errorElement: 'span',
-	    errorPlacement: function(error, element) {
-        console.log(error, element);
-	      error.addClass('form-error');
-	      error.appendTo(element.closest('.js-form-validate__elem-holder'));
-	    },
-	    highlight: function(element, errorClass, validClass) {
-	      $(element).addClass(errorClass).removeClass(validClass);
-	    },
-	    unhighlight: function(element, errorClass, validClass) {
-	      var $input = $(element);
+    errorElement: 'span',
+    errorPlacement: function(error, element) {
+      console.log(error, element);
+      error.addClass('form-error');
+      error.appendTo(element.closest('.js-form-validate__elem-holder'));
+    },
+    highlight: function(element, errorClass, validClass) {
+      $(element).addClass(errorClass).removeClass(validClass);
+    },
+    unhighlight: function(element, errorClass, validClass) {
+      var $input = $(element);
 
-	      if ($input.val() === '') {
-	        $input.removeClass(validClass).removeClass(errorClass);
-	      } else {
-	        $input.removeClass(errorClass).addClass(validClass);
-	      }
-	    },
-	    errorClass: 'is-error',
-	    validClass: 'is-valid',
-	    ignore: ".ignore, :hidden"
+      if ($input.val() === '') {
+        $input.removeClass(validClass).removeClass(errorClass);
+      } else {
+        $input.removeClass(errorClass).addClass(validClass);
+      }
+    },
+    errorClass: 'is-error',
+    validClass: 'is-valid',
+    ignore: ".ignore, :hidden"
 	});
 
 	$('.js-form-validate').each(function(){
-        var $this_form = $(this);
-        $this_form.validate();
-    });
-
-	$('.js-form-validate-remote').each(function(){
-
-		var $curForm = $(this);
-
-		$curForm.validate({
-			rules: {
-		        CaptchaInputText:
-		        {
-		            remote:$curForm.data('remote-url') + $curForm.serialize()
-		        }
-		    },
-		    messages: {
-		        CaptchaInputText:
-		        {
-		            remote:"Символы введены неправильно"
-		        }
-		    }
-		});
-	});
+    var $this_form = $(this);
+    $this_form.validate();
+  });
 
 	$.validator.addMethod("greaterThan", function(value, element, params) {
 	    if (!/Invalid|NaN/.test(new Date(value))) {

@@ -1,6 +1,6 @@
 export default function () {
 
-  var toggles = document.querySelectorAll(".cmn-toggle-switch");
+  var toggles = document.querySelectorAll(".js-humburger");
 
   for (var i = toggles.length - 1; i >= 0; i--) {
     var toggle = toggles[i];

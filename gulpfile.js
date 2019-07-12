@@ -19,8 +19,8 @@ const webpackStream  = require('webpack-stream'),
   named = require('vinyl-named'),
   uglify = require('gulp-uglify'),
   browserify = require('browserify'),
-  babel = require('babelify'),
-  path = require('path');
+  path = require('path'),
+  babel = require('gulp-babel');
 
 // media plugins
 const svgmin = require('gulp-svgmin'),
@@ -162,6 +162,9 @@ gulp.task('jsCustom', function(callback) {
   return gulp.src(config.src.jsCustom)
       .pipe(plumber())
       .pipe(named())
+      .pipe(babel({
+        presets: ["babel-preset-env"]
+    }))
       .pipe(webpackStream(webpackConfig, null, done))
       .pipe(gulp.dest(config.build.js))
       .on('data', function() {

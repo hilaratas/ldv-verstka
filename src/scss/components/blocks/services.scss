@@ -41,6 +41,20 @@
     flex-direction: column;
     height: 100%;
     text-decoration: none;
+
+    .is-not-mobile &:hover, .is-html-focus &:focus {
+      .services__text-holder {
+        background: $color-brand-2;
+      }
+      .services__text-holder--action {
+        background: darken(#CE000C, 10%);
+      }
+    }
+
+    .is-html-focus &:focus {
+      outline: none;
+      box-shadow: 0px 0px 3px 3px rgba($color-brand-2, 0.4);
+    }
   }
 
   &__img-holder {
@@ -93,15 +107,6 @@
       .services__text-holder {
         background: $grey-brand-1;
       }
-    }
-  }
-
-  &__item:hover {
-    .services__text-holder {
-      background: $color-brand-2;
-    }
-    .services__text-holder--action {
-      background: darken(#CE000C, 10%);
     }
   }
 }

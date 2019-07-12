@@ -30,6 +30,11 @@
     .is-not-mobile &:hover {
       border-radius: 50%;
     }
+
+    .is-html-focus &:focus {
+      border-radius: 50%;
+      box-shadow: 0px 0px 3px 3px rgba(#000, 0.1);
+    }
   }
   &__icon {
     display: inline-block;

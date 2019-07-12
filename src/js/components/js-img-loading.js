@@ -1,5 +1,9 @@
 export default function() {
-  let hIMgs = document.querySelectorAll(".pict__img");
+  let hIMgs = document.querySelectorAll(".js-img-loading");
+
+  if ( !hIMgs.length ) {
+    return;
+  }
 
   hIMgs.forEach(function(elem) {
     let hImg = elem;
@@ -14,17 +18,15 @@ export default function() {
 
     promise
       .then((img) => {
-        let $img = $(img);
-        let $loadParent = $img.closest('is-loading');
+        let hLoadParent = img.closest('.is-loading');
 
-        $loadParent.removeClass('is-loading');
+        hLoadParent.classList.remove('is-loading');
       })
       .catch((img) =>  {
-        let $img = $(img);
-        let $loadParent = $img.closest('is-loading');
+        let hLoadParent = img.closest('.is-loading');
 
-        $loadParent.removeClass('is-loading');
-        $loadParent.addClass('is-error');
+        hLoadParent.classList.remove('is-loading');
+        hLoadParent.classList.add('is-error');
       })
   });
 }

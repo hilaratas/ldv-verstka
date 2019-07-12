@@ -177,7 +177,8 @@ a {
   -webkit-text-decoration-skip: objects; // Remove gaps in links underline in iOS 8+ and Safari 8+.
 
   &:focus {
-    outline: 0;
+    //outline: 0;
+
   }
 }
 

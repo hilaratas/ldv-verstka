@@ -1,20 +1,21 @@
 import 'nodelist-foreach-polyfill';
 import 'promise-polyfill/src/polyfill';
+import svg4everybody from './components/svg4everybody';
 import isMobile from './components/is-mobile';
 import sliders from './components/sliders';
-import gumburger from './components/gumburger';
-import popups from './components/popups';
-import validate from './components/validate';
+import jsHumburger from './components/js-humburger';
+//import popups from './components/popups';
+import jsFormValidate from './components/js-form-validate';
 import tables from './components/tables';
-import mainMenu from './components/main-menu';
-import mask from './components/js-mask';
-import svg4everybody from './components/svg4everybody';
+import jsMainMenu from './components/js-main-menu';
+import jsMaskTel from './components/js-mask-tel';
 //import svgStore from './components/svg-store';
 import aos from './components/aos';
-import mainHeader from './components/js-main-header';
+import jsMainHeader from './components/js-main-header';
 import jsCartItem from './components/js-cart-item';
 import jsCartAddr from './components/js-cart-addr';
 import jsImgLoading from './components/js-img-loading';
+import isHtmlFocus from './components/is-html-focus';
 
 $(function(){
 	let htmlEl = document.documentElement;
@@ -24,20 +25,21 @@ $(function(){
 		htmlEl.classList.add('is-not-mobile');
 	}
 
-	sliders();
-  mainHeader();
-	gumburger();
-	popups();
-	validate();
+  sliders();
+  svg4everybody();
+  jsMainHeader();
+	jsHumburger();
+	//popups();
 	tables();
-	mainMenu();
-	mask();
-	svg4everybody();
+	jsMainMenu();
+  jsMaskTel();
+  jsFormValidate();
 	//svgStore();
   aos();
   jsCartItem();
   jsCartAddr();
   jsImgLoading();
+  isHtmlFocus();
 });
 
 
