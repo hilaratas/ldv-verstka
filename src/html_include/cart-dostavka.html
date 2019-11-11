@@ -1,0 +1,99 @@
+<div class="section section--index">
+  <div class="pretty-decor">
+    <div class="pretty-decor__inner">
+      <div class="section__inner">
+        <div id="js-main-header-holder"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+@@include('./breadcrumbs.html')
+
+<section class="section section--index">
+  <div class="section__inner">
+    <main class="main-content" role="main">
+      <!-- Уникальный контент страницы -->
+      <h1 class="title title--h1 title--white title--mb0 is-hidden" id="js-main-header">Адрес</h1>
+
+      <div class="cart-adr-menu">
+        <ul class="cart-adr-menu__list">
+          <li class="cart-adr-menu__item is-active"><span class="cart-adr-menu__link">Адрес</span></li>
+          <li class="cart-adr-menu__item"><a class="cart-adr-menu__link" href="#">Способ оплаты</a></li>
+          <li class="cart-adr-menu__item"><span class="cart-adr-menu__link">Способ доставки</span></li>
+          <li class="cart-adr-menu__item"><span class="cart-adr-menu__link">Подтвердить заказ</span></li>
+        </ul>
+      </div>
+
+      <form action="/ldv_s1/catalog/checkout/step2save" method="post" name="loginForm" class="form js-form-validate js-cart-addr" autocomplete="off" enctype="multipart/form-data">
+        <div class="mt-4">
+            <table class="cart-addr">
+              <tr class="cart-addr__row">
+                <td class="cart-addr__cell" colspan="1">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="row row--2px">
+                        <div class="col-auto">
+                          <label class="radio"><input type="radio" name="payment_method" value="pm_cash_on_delivery" checked="checked" id="payment_method_1"><span class="radio__indicator"></span></label>
+                        </div>
+                        <div class="col">
+                          <label for="payment_method_1">Наличными при доставке курьером</label>
+                          <div class="cart-addr__additional">
+                            <p>Услуга действует только в Нижнем Новгороде</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td class="cart-addr__cell cart-addr__cell--price-holder" colspan="1">
+                  250p
+                </td>
+              </tr>
+              <tr class="cart-addr__row">
+                <td class="cart-addr__cell" colspan="1">
+                    <div class="row row--2px">
+                        <div class="col-auto">
+                          <label class="radio"><input type="radio" name="payment_method" value="pm_samovivoz1" checked="checked" id="payment_method_2"><span class="radio__indicator"></span></label>
+                        </div>
+                        <div class="col">
+                          <label for="payment_method_2">Самовывоз из магазина "Цветочки букетики"</label>
+                          <div class="cart-addr__additional">
+                            <p>Самовывоз из магазина товаров ручной работы "Цветочки букетики". Адрес - г. Нижний Новгород, ул. Рождественская, дом 5, 2 этаж&nbsp;</p>
+                          </div>
+                        </div>
+                      </div>
+                </td>
+                <td class="cart-addr__cell cart-addr__cell--price-holder" colspan="1">
+                  0p
+                </td>
+              </tr>
+              <tr class="cart-addr__row">
+                <td class="cart-addr__cell" colspan="1">
+                    <div class="row row--2px">
+                        <div class="col-auto">
+                          <label class="radio"><input type="radio" name="payment_method" value="pm_samovivoz2" checked="checked" id="payment_method_3"><span class="radio__indicator"></span></label>
+                        </div>
+                        <div class="col">
+                          <label for="payment_method_3">Самовывоз из товаров народного творчества</label>
+                          <div class="cart-addr__additional">
+                              <p>Самовывоз из магазина товаров ручной работы "Цветочки букетики". Адрес - г. Нижний Новгород, ул. Рождественская, дом 5, 2 этаж&nbsp;</p>
+                          </div>
+                        </div>
+                      </div>
+                </td>
+                <td class="cart-addr__cell cart-addr__cell--price-holder" colspan="1">
+                  0p
+                </td>
+              </tr>
+            </table>
+
+        </div>
+        <div class="mt-2">
+          <button class="button">Далее</button>
+        </div>
+      </form>
+      <!-- Уникальный контент страницы -->
+    </main><!-- /.main-content -->
+  </div>
+</section>
