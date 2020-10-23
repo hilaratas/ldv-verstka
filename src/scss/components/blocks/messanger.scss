@@ -1,0 +1,45 @@
+.messanger {
+  display: inline-block;
+  vertical-align: middle;
+  height: $form-el-height;
+  margin: 0;
+  padding: $form-el-padding-vert $form-el-padding-hor;
+  border: $form-el-border solid $button-bg;
+  border-radius: $border-radius;
+  font-weight: $font-normal;
+  font-size: $form-el-font-size;
+  line-height: $form-el-line-height;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.6px;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  @include no-appearance();
+  user-select: none;
+  transition: $transition-duration;
+  text-decoration: none;
+  &--whatsapp {
+    background: #23C943;
+    border: $form-el-border solid #23C943;
+  }
+  &--viber {
+    background: #7B519D;
+    border: $form-el-border solid #7B519D;
+  }
+  &--telegram {
+    background: #2BA3D7;
+    border: $form-el-border solid #2BA3D7;
+  }
+  &--skype {
+    background: #28A8EA;
+    border: $form-el-border solid #28A8EA;
+  }
+  &--w100 {
+    width: 100%;
+  }
+}

@@ -1,4 +1,6 @@
 .section {
+  position: relative;
+
   @media #{$media-not-phone} {
     &--index {
       padding-left: $header-width;
