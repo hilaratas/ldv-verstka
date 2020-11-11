@@ -9,8 +9,8 @@ function SideNav(el) {
   var sideContEl = document.querySelector('.sidebar__content');
 
   var startPosition = 0,
-        currentPosition = 0,
-        isGestureStarted = false;
+    currentPosition = 0,
+    isGestureStarted = false;
 
   var self = this;
 
@@ -26,7 +26,7 @@ function SideNav(el) {
   function onsideContElClick(e) {
     // Close only on non content click
     if (e.target === sideNavEl) {
-        hide();
+      hide();
     }
   }
 
@@ -46,6 +46,8 @@ function SideNav(el) {
       return;
     }
 
+    evt.preventDefault();
+
     currentPosition = evt.pageX;
     updatePosition();
   }
@@ -57,11 +59,10 @@ function SideNav(el) {
 
     isGestureStarted = false;
     //sideContEl.releasePointerCapture(evt.pointerID);
-
     enableTransition();
     resetPosition();
 
-    if ( currentPosition - startPosition < -50) {
+    if (currentPosition - startPosition < -75) {
       hide();
     } else {
       show();
@@ -69,35 +70,35 @@ function SideNav(el) {
   }
 
   function resetPosition() {
-        requestAnimationFrame(function() {
-          sideContEl.style.transform = '';
-        });
-    }
+    requestAnimationFrame(function () {
+      sideContEl.style.transform = '';
+    });
+  }
 
   function disableTransition() {
-        sideContEl.style.transition = 'none';
-    }
+    sideContEl.style.transition = 'none';
+  }
 
-    function enableTransition() {
-        sideContEl.style.transition = '';
-    }
+  function enableTransition() {
+    sideContEl.style.transition = '';
+  }
 
-    function updatePosition() {
-      requestAnimationFrame(function(){
-        var diff = Math.min(0, currentPosition - startPosition);
-        sideContEl.style.transform = 'translateX(' + diff + 'px)';
-      });
-    }
+  function updatePosition() {
+    requestAnimationFrame(function () {
+      var diff = Math.min(0, currentPosition - startPosition);
+      sideContEl.style.transform = 'translateX(' + diff + 'px)';
+    });
+  }
 
-    function show() {
-      htmlEl.classList.add('is-main-menu-open');
-    }
+  function show() {
+    htmlEl.classList.add('is-main-menu-open');
+  }
 
-    function hide() {
-      htmlEl.classList.remove('is-main-menu-open');
-    }
+  function hide() {
+    htmlEl.classList.remove('is-main-menu-open');
+  }
 
-    function toggle() {
-        htmlEl.classList.toggle('is-main-menu-open');
-    }
+  function toggle() {
+    htmlEl.classList.toggle('is-main-menu-open');
+  }
 }
