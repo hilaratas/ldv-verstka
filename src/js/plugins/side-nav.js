@@ -30,7 +30,7 @@ function SideNav(el) {
     }
   }
 
-  function onToggleMenu(evt) {
+  function onToggleMenu() {
     toggle();
   }
 
@@ -56,6 +56,7 @@ function SideNav(el) {
     if (evt.target === sideContEl) {
       currentPosition = evt.pageX;
     }
+    console.log(evt);
 
     isGestureStarted = false;
     //sideContEl.releasePointerCapture(evt.pointerID);
@@ -67,6 +68,9 @@ function SideNav(el) {
     } else {
       show();
     }
+
+    console.log(this, evt.target);
+    evt.stopPropagation();
   }
 
   function resetPosition() {
