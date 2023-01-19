@@ -1,12 +1,10 @@
 (function($) {
   $.fn.scrollContent = function(settings) {
 
-    var $ts = this;
     var namespace = "scrollContent";
     var opts = $.extend( {blockClass: "scroll-content"}, settings);
 
     return this.each(function(){
-      var t = this;
       var $t = $(this);
       var $tWrap = null;
       var $w = $(window);

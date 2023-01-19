@@ -6,7 +6,7 @@ export default function() {
     return;
   }
 
-  pars.forEach(function(par, index) {
+  pars.forEach(function(par) {
     let chList = par.querySelectorAll(".js-cart-addr__toggle");
     console.dir(chList);
 
