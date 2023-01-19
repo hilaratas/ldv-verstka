@@ -1,7 +1,7 @@
 {
   "name": "www",
   "version": "1.0.0",
-  "description": "**1. Быстрый старт**  \r     npm run start - сборка папки build, запуск сервера, запуск watch  \r     npm run build - запуск сервера, запуск watch",
+  "description": "**1. Быстрый старт**  \r  npm run dev - сборка папки build, запуск сервера, запуск watch  \r  npm run prod - сборка папки build, запуск сервера",
   "main": ".eslintrc.js",
   "dependencies": {
     "babel-cli": "^6.26.0"

@@ -242,7 +242,7 @@ gulp.task('watch', function(){
   gulp.watch(config.watch.cssCustom, gulp.series('cssCustom', reload));
 });
 
-build = gulp.series('del',
+let build = gulp.series('del',
   'html',
   'cssCopy', 'cssCustom',
   'jsPlugins', 'jsVendors', 'jsCustom',
