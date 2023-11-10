@@ -6,10 +6,11 @@ const svgstore = require('gulp-svgstore')
 const rename = require('gulp-rename')
 const optionsSvgSprite = require('./optionsSvgSprite')
 
-svgSprite = function () {
+const svgSprite = function () {
   return gulp.src(config.svgSprite.src)
     .pipe(plumber())
     .pipe(svgmin(optionsSvgSprite))
+    .pipe(rename({ prefix: 'icon-' }))
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename('svg-sprite.svg'))
     .pipe(gulp.dest(config.svgSprite.build))
