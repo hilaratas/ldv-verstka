@@ -26,11 +26,11 @@ $font-bold: 700;
 
 // FONT-SIZE
 // ДЕСКТОП
-$font-size-h1-desk: (60px/$font-size-base) + rem;
-$font-size-h2-desk: (45px/$font-size-base) + rem;
-$font-size-h3-desk: (30px/$font-size-base) + rem;
-$font-size-h4-desk: (25px/$font-size-base) + rem;
-$font-size-h5-desk: (20px/$font-size-base) + rem;
+$font-size-h1-desk: calc(60px/$font-size-base) + rem;
+$font-size-h2-desk: calc(45px/$font-size-base) + rem;
+$font-size-h3-desk: calc(30px/$font-size-base) + rem;
+$font-size-h4-desk: calc(25px/$font-size-base) + rem;
+$font-size-h5-desk: calc(20px/$font-size-base) + rem;
 $font-size-h6-desk: 1rem;
 
 $line-height-h1-desk-ratio: 0.9;
@@ -41,11 +41,11 @@ $line-height-h5-desk-ratio: 1.3;
 $line-height-h6-desk-ratio: 1.4;
 
 // ПЛАНШЕТ
-$font-size-h1-tablet: (60px/$font-size-base) + rem;
-$font-size-h2-tablet: (45px/$font-size-base) + rem;
-$font-size-h3-tablet: (30px/$font-size-base) + rem;
-$font-size-h4-tablet: (25px/$font-size-base) + rem;
-$font-size-h5-tablet: (20px/$font-size-base) + rem;
+$font-size-h1-tablet: calc(60px/$font-size-base) + rem;
+$font-size-h2-tablet: calc(45px/$font-size-base) + rem;
+$font-size-h3-tablet: calc(30px/$font-size-base) + rem;
+$font-size-h4-tablet: calc(25px/$font-size-base) + rem;
+$font-size-h5-tablet: calc(20px/$font-size-base) + rem;
 $font-size-h6-tablet: 1rem;
 
 $line-height-h1-tablet-ratio: 0.9;

@@ -9,7 +9,7 @@
     "ecmaVersion": 6,
     "sourceType": "module"
   },
-"plugins": ["prettier"],
+  "plugins": ["prettier"],
   "rules": {
     "space-before-function-paren": 0
   }

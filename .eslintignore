@@ -1,2 +1,13 @@
-/src/js/vendors/*.js
-/build/*.*
+/node_modules/
+/src/tmp/
+/src/.idea/
+/.sass-cache/
+*.DS_Store
+*.rar
+*.zip
+*.log
+*.sublime-project
+*.sublime-workspace
+/.idea/
+/build/
+/prod/

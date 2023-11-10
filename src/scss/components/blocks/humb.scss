@@ -42,7 +42,7 @@ $button-trans-delay: 0.3s;
   span {
     height: $bar-thickness;
     background: $color-brand-1;
-    border-radius: $bar-thickness/2;
+    border-radius: calc($bar-thickness/2);
 
     &:before, &:after {
       position: absolute;
@@ -50,7 +50,7 @@ $button-trans-delay: 0.3s;
       left: 0;
       width: 100%;
       height: $bar-thickness;
-      border-radius: $bar-thickness/2;
+      border-radius: calc($bar-thickness/2);
       content: "";
     }
 
@@ -77,9 +77,9 @@ $button-trans-delay: 0.3s;
   span {
     display: block;
     position: absolute;
-    top: ($button-height / 2) - ( $bar-thickness / 2);
-    left: ($button-width / 2) - ( $cross-width / 2);
-    right: ($button-width / 2) - ( $cross-width / 2);
+    top: calc($button-height / 2) - calc( $bar-thickness / 2);
+    left: calc($button-width / 2) - calc( $cross-width / 2);
+    right: calc($button-width / 2) - calc( $cross-width / 2);
 
     &:before, &:after {
       background-color: $color-brand-1;
@@ -100,11 +100,11 @@ $button-trans-delay: 0.3s;
 }
 
 .humb span::before {
-  top: -(($cross-height / 2) - ($bar-thickness / 2));
+  top: -(calc($cross-height / 2) - calc($bar-thickness / 2));
 }
 
 .humb span::after {
-  bottom: -(($cross-height / 2) - ($bar-thickness / 2));
+  bottom: -(calc($cross-height / 2) - calc($bar-thickness / 2));
 }
 
 .humb__htx {

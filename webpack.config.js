@@ -11,9 +11,6 @@ module.exports = {
     filename: 'main.js'
   },
   watch: false,
-  plugins: [
-    //new webpack.optimize.UglifyJsPlugin()
-  ],
   module: {
     loaders: [
       {
@@ -27,14 +24,3 @@ module.exports = {
     ]
   }
 };
-
-    // loaders: [
-    //   {
-    //     test: /\.js$/,
-    //     exclude: /(node_modules)/,
-    //     loader: 'babel', // 'babel-loader' is also a valid name to reference
-    //     query: {
-    //       presets: ['env']
-    //     }
-    //   }
-    // ]
