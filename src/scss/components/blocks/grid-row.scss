@@ -1,0 +1,26 @@
+.grid-row {
+  display: flex;
+
+  &--align-items {
+    &-center {
+      align-items: center;
+    }
+    &-end {
+      align-items: flex-end;
+    }
+    &-start {
+      align-items: flex-start;
+    }
+    &-baseline {
+      align-items: baseline;
+    }
+  }
+
+  &--gap-0 {
+    gap: 0
+  }
+
+  &--gap-10px {
+    gap: 10px
+  }
+}

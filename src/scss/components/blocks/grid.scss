@@ -1,0 +1,19 @@
+.grid {
+  &--vi-5px {
+    & > .grid-row {
+      margin-top: 5px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &--vi-20px {
+    & > .grid-row {
+      margin-top: 20px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
