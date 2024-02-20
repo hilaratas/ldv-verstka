@@ -6,12 +6,12 @@
   vertical-align: middle;
   overflow: hidden;
 
-  input[type="radio"] {
+  input[type="radio"], input[type="checkbox"] {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 
-    & + .radio_attr_label {
+    & + .product-color__label {
       display: block;
       width: 100%;
       height: 100%;
@@ -37,23 +37,23 @@
       }
     }
 
-    &:checked + .radio_attr_label {
+    &:checked + .product-color__label {
       &:before {
         opacity: 1;
       }
     }
 
-    &:disabled + .radio_attr_label {
+    &:disabled + .product-color__label {
       background: lighten($radio-color-border, 5%);
     }
 
-    &[value="1"] + .radio_attr_label{
+    &[value="black"] + .product-color__label{
       background: #000;
     }
-    &[value="2"] + .radio_attr_label{
+    &[value="silver"] + .product-color__label{
       background: #c0c0c0;
     }
-    &[value="3"] + .radio_attr_label{
+    &[value="copper"] + .product-color__label{
       background: #b87333;
     }
 
