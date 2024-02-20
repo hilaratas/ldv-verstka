@@ -10,6 +10,7 @@
   background: #000;
   transform: translateX(-100%);
   transition: transform 0.3s;
+  color: #fff;
 }
 .link-panel:hover {
   transform: translateX(0%);
