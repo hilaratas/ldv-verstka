@@ -1,0 +1,37 @@
+.control {
+  display: block;
+  width: 100%;
+  border: $form-el-border solid $input-color-border;
+  box-shadow: none;
+  background: #fff;
+  color: $color-brand-1;
+  transition: border-color 0.5s;
+  padding: 10px 13px;
+
+  &__label {
+    display: block;
+    width: 100%;
+    font-size: $font-size-small;
+    line-height: 1;
+    padding-bottom: 7px;
+    @include text-ellipsis;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: none;
+    @include no-appearance;
+    @include text-ellipsis;
+    padding: 0;
+    line-height: $form-el-line-height;
+    font-size: $form-el-font-size;
+    font-family: $font-family-base;
+    color: $color-brand-1;
+
+    &:focus, &:active {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}

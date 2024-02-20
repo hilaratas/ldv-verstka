@@ -12,7 +12,6 @@
     box-shadow: none;
     background: #fff;
     color: $color-brand-1;
-
     @include no-appearance;
     @include text-ellipsis;
 

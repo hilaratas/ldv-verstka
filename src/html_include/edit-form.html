@@ -1,0 +1,73 @@
+<div class="section section--index">
+  <div class="pretty-decor">
+    <div class="pretty-decor__inner">
+      <div class="section__inner">
+        <div id="js-main-header-holder"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+@@include('./breadcrumbs.html')
+
+<section class="section section--index">
+
+  <div class="section__main-content">
+    <div class="section__inner">
+      <main class="main-content" role="main">
+        <!-- Уникальный контент страницы -->
+        <h1 class="title title--h1 title--white title--mb0 is-hidden" id="js-main-header">Форма редактирования</h1>
+        <form action="#" class="form" id="edit">
+          <div class="grid grid--vi-20px">
+            <div class="grid-row">
+              <div class="control">
+                <label for="edit-product-title" class="control__label">Название изделия</label>
+                <input type="text" class="control__input" id="edit-product-title"  name="product-title">
+              </div>
+            </div>
+            <div class="grid-row">
+              <div class="control">
+                <label for="edit-hru" class="control__label">ЧПУ</label>
+                <input type="text" class="control__input" id="edit-hru"  name="hru">
+              </div>
+            </div>
+            <div class="grid-row">
+              <div class="control">
+                <label for="edit-img" class="control__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur est nihil totam ut, veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque iure laudantium, maiores nobis optio perferendis porro quas quasi tempore voluptas!</label>
+                <input type="text" class="control__input" id="edit-img"  name="img">
+              </div>
+            </div>
+            <div class="grid-row">
+              <div class="control">
+                <div class="control__label">Цвета</div>
+                <div class="grid-row grid-row--gap-10px">
+                  <div class="grid-col">
+                    <label class="product-color"><input type="checkbox" name="color" value="black"><span class="product-color__label">Черный</span></label>
+                  </div>
+                  <div class="grid-col">
+                    <label class="product-color"><input type="checkbox" name="color" value="copper"><span class="product-color__label">Медный</span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-row">
+              <div class="control">
+                <label class="control__label">Под заказ</label>
+                <label class="checkbox"><input type="checkbox" name="color" value="black"><span class="checkbox__indicator"></span></label>
+              </div>
+            </div>
+            <div class="grid-row">
+              <div class="control">
+                <label for="edit-product-title" class="control__label">Название изделия</label>
+                <textarea class="control__input"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi fermentum nec fames tincidunt mattis placerat feugiat nulla maximus. Elit felis semper mattis urna primis est dui a enim rhoncus. Sollicitudin duis iaculis justo nec lacus conubia mattis nullam vehicula porta tristique. Tempus ex porta cursus odio viverra diam fermentum pulvinar suscipit sit fusce tellus. Blandit varius euismod est justo venenatis purus pharetra in. </textarea>
+              </div>
+            </div>
+          </div>
+
+        </form>
+        <!-- /Уникальный контент страницы -->
+      </main> <!-- /.main-content -->
+    </div>
+  </div> <!-- / .section__main-content -->
+
+</section>
